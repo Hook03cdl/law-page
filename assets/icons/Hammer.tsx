@@ -1,0 +1,19 @@
+import { cn } from "@/lib/utils";
+import { SVGProps } from "react";
+
+export function Hammer({ className, ...props }: SVGProps<SVGSVGElement>) {
+	return (
+		<svg
+			className={cn("[not([class*='size-'])]:size-6", className)}
+			viewBox="0 0 28 28"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
+			<path
+				d="M0 27.2884V25.0384H17.2499V27.2884H0ZM8.70579 19.5518L0.750055 11.5961L3.38079 8.89034L11.4115 16.8461L8.70579 19.5518ZM17.5961 10.6615L9.64039 2.63073L12.3461 0L20.3019 7.95573L17.5961 10.6615ZM24.8135 25.6441L5.75772 6.5884L7.33846 5.00767L26.3942 24.0634L24.8135 25.6441Z"
+				fill="currentColor"
+			/>
+		</svg>
+	);
+}
