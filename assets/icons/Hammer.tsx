@@ -1,10 +1,11 @@
-import { cn } from "@/lib/utils";
 import { SVGProps } from "react";
 
 export function Hammer({ className, ...props }: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
-			className={cn("[not([class*='size-'])]:size-6", className)}
+			className={className}
+			height={24}
+			width={24}
 			viewBox="0 0 28 28"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

@@ -55,9 +55,9 @@
 	--accent: #002349;
 	--accent-foreground: #fafafa;
 	--destructive: #e7000b;
-	--border: #74777f;
+	--border: #e2e8f0;
 	--input: #74777f;
-	--ring: oklch(0.708 0 0);
+	--ring: #a1a1a1;
 	--radius: 0.625rem;
 }
 

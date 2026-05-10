@@ -45,25 +45,26 @@ export default function ValueProposition() {
 				</div>
 			</ContainerContent>
 			<ContainerContent className="col-span-7 grid grid-cols-2 gap-5">
-				<div className="relative h-full w-auto">
-					<Image
-						src={"/images/law.jpg"}
-						alt={"law"}
-						fill
-						className="object-cover"
-						sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,(max-width: 1600px) 40vw,33vw"
-					/>
-				</div>
+				{/* <div className="relative h-full w-auto"> */}
+				<Image
+					src={"/images/office.jpg"}
+					alt={"office"}
+					height={800}
+					width={600}
+					className="object-contain"
+					sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,(max-width: 1600px) 40vw,33vw"
+				/>
+				{/* </div> */}
 
-				<div className=" grid grid-rows-2 gap-5">
-					<Card className="size-full bg-primary text-primary-foreground">
+				<div className="grid grid-rows-2 gap-5">
+					<Card className="flex justify-center size-full bg-primary text-primary-foreground">
 						<CardHeader className="space-y-5">
 							<Earth className="text-secondary size-10" />
 							<CardTitle>Global Reach</CardTitle>
 							<CardDescription>Connecting the financial hubs of Mexico City and New York.</CardDescription>
 						</CardHeader>
 					</Card>
-					<Card className="size-full bg-secondary text-secondary-foreground">
+					<Card className="flex justify-center size-full bg-secondary text-secondary-foreground">
 						<CardHeader className="space-y-5">
 							<ScrollText className="text-primary size-10" />
 							<CardTitle>Document Integrity</CardTitle>

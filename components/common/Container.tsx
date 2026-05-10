@@ -3,7 +3,9 @@ import { cn } from "@/lib/utils";
 type ContainerProps = React.ComponentProps<"main">;
 type ContainerHeaderProps = React.ComponentProps<"header">;
 type ContainerActionProps = React.ComponentProps<"div">;
-type ContainerTitleProps = React.ComponentProps<"div">;
+interface ContainerTitleProps extends React.ComponentProps<"div"> {
+	size?: "sm" | "default" | "lg" | "xl";
+}
 type ContainerDescriptionProps = React.ComponentProps<"div">;
 type ContainerItemProps = React.ComponentProps<"section">;
 type ContainerContentProps = React.ComponentProps<"article">;
@@ -18,7 +20,7 @@ export function Container({ className, ...props }: ContainerProps) {
 	);
 }
 export function ContainerItem({ className, ...props }: ContainerItemProps) {
-	return <section data-slot="container-item" className={cn("grid gap-15 px-10 py-30", className)} {...props} />;
+	return <section data-slot="container-item" className={cn("space-y-15 px-10 py-30", className)} {...props} />;
 }
 
 export function ContainerHeader({ className, ...props }: ContainerHeaderProps) {
@@ -44,15 +46,27 @@ export function ContainerTagline({ children, className, ...props }: ContainerTit
 		</div>
 	);
 }
-export function ContainerTitle({ children, className, ...props }: ContainerTitleProps) {
+export function ContainerTitle({ children, className, size = "default", ...props }: ContainerTitleProps) {
 	return typeof children === "string" ? (
-		<h1 className={cn("font-heading text-primary text-4xl font-bold", className)} {...props}>
+		<h1
+			data-size={size}
+			className={cn(
+				"font-heading text-primary font-bold",
+				"data-[size=default]:text-4xl data-[size=sm]:text-2xl data-[size=lg]:text-5xl data-[size=xl]:text-6xl",
+				className
+			)}
+			{...props}
+		>
 			{children}
 		</h1>
 	) : (
 		<div
 			data-slot="container-title"
-			className={cn("font-heading text-primary text-4xl font-bold", className)}
+			className={cn(
+				"font-heading text-primary font-bold",
+				"data-[size=default]:text-4xl data-[size=sm]:text-2xl data-[size=lg]:text-5xl data-[size=xl]:text-6xl",
+				className
+			)}
 			{...props}
 		>
 			{children}
@@ -71,7 +85,7 @@ export function ContainerAction({ className, ...props }: ContainerActionProps) {
 }
 
 export function ContainerDescription({ className, ...props }: ContainerDescriptionProps) {
-	return <div data-slot="container-description" className={cn("", className)} {...props}></div>;
+	return <div data-slot="container-description" className={cn("text-lg text-foreground", className)} {...props}></div>;
 }
 
 export function ContainerContent({ ...props }: ContainerContentProps) {

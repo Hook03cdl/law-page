@@ -12,11 +12,11 @@ import Link from "next/link";
 
 export default function Hero() {
 	return (
-		<ContainerItem className="grid grid-cols-12 min-h-[calc(100svh-80px)] pt-5">
+		<ContainerItem className="grid grid-cols-12 max-2xl:min-h-[calc(100svh-80px)] pt-5">
 			<ContainerContent className="col-span-7 grid place-content-center space-y-6">
 				<ContainerTagline>UNRIVALED LEGAL REPRESENTATION</ContainerTagline>
 				<ContainerTitle className="text-6xl">Authority Built on Decades of Trust.</ContainerTitle>
-				<ContainerDescription>
+				<ContainerDescription className="max-w-xl">
 					Navigating high-stakes cross-border legalities with surgical precision. We provide architectural restraint to
 					your legal challenges, ensuring stability in Mexico and the United States.
 				</ContainerDescription>
@@ -32,7 +32,7 @@ export default function Hero() {
 
 			<ContainerContent className="col-span-5 flex justify-end items-center">
 				<div className="relative">
-					<Image src={"/images/law.jpg"} alt={"law"} width={480} height={700} loading="eager" className="aspect-auto" />
+					<Image src={"/images/law.jpg"} alt={"law"} width={480} height={600} className="object-contain" />
 					<div className="absolute -bottom-7 -left-7 w-52 h-32 grid place-items-center bg-accent">
 						<div>
 							<div className="flex items-center text-primary-foreground">

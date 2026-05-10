@@ -27,6 +27,27 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
 	);
 }
 
+function CardIcon({
+	children,
+	className,
+	size = "default",
+	...props
+}: React.ComponentProps<"div"> & { className?: string; size?: "sm" | "default" | "lg" }) {
+	return (
+		<div
+			data-size={size}
+			data-slot="card-icon"
+			className={cn(
+				"text-secondary data-[size=default]:*:size-8 data-[size=sm]:*:size-6 data-[size=lg]:*:size-10 mb-5",
+				className
+			)}
+			{...props}
+		>
+			{children}
+		</div>
+	);
+}
+
 function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
 	return (
 		<div
@@ -65,4 +86,4 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
 	);
 }
 
-export { Card, CardHeader, CardFooter, CardTitle, CardAction, CardDescription, CardContent };
+export { Card, CardHeader, CardFooter, CardIcon, CardTitle, CardAction, CardDescription, CardContent };
