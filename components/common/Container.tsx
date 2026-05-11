@@ -48,7 +48,8 @@ export function ContainerTagline({ children, className, ...props }: ContainerTit
 }
 export function ContainerTitle({ children, className, size = "default", ...props }: ContainerTitleProps) {
 	return typeof children === "string" ? (
-		<h1
+		<h2
+			data-slot="container-title"
 			data-size={size}
 			className={cn(
 				"font-heading text-primary font-bold",
@@ -58,10 +59,11 @@ export function ContainerTitle({ children, className, size = "default", ...props
 			{...props}
 		>
 			{children}
-		</h1>
+		</h2>
 	) : (
 		<div
 			data-slot="container-title"
+			data-size={size}
 			className={cn(
 				"font-heading text-primary font-bold",
 				"data-[size=default]:text-4xl data-[size=sm]:text-2xl data-[size=lg]:text-5xl data-[size=xl]:text-6xl",

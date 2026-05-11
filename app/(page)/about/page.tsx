@@ -1,3 +1,7 @@
+import Leadership from "@/components/about/Leadership";
+import OurLegacy from "@/components/about/OurLegacy";
+import OurPillar from "@/components/about/OurPillars";
+import PhoneInformation from "@/components/about/PhoneInformation";
 import {
 	Container,
 	ContainerDescription,
@@ -5,6 +9,11 @@ import {
 	ContainerItem,
 	ContainerTitle,
 } from "@/components/common/Container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "About us",
+};
 
 export default function AboutPage() {
 	return (
@@ -31,6 +40,10 @@ export default function AboutPage() {
 					</div>
 				</ContainerHeader>
 			</ContainerItem>
+			<OurLegacy />
+			<OurPillar />
+			<Leadership />
+			<PhoneInformation />
 		</Container>
 	);
 }

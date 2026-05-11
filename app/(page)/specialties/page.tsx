@@ -10,8 +10,12 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardIcon, CardTitle } from "@/components/ui/card";
 import { specialities } from "@/data/specialties";
+import { Metadata } from "next";
 import Image from "next/image";
 
+export const metadata: Metadata = {
+	title: "Specialties",
+};
 export default function SpecialtiesPage() {
 	return (
 		<Container>

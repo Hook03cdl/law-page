@@ -38,7 +38,7 @@ function CardIcon({
 			data-size={size}
 			data-slot="card-icon"
 			className={cn(
-				"text-secondary data-[size=default]:*:size-8 data-[size=sm]:*:size-6 data-[size=lg]:*:size-10 mb-5",
+				"text-secondary data-[size=default]:*:size-8 group-data-[size=sm]:*:size-6 data-[size=sm]:*:size-6 data-[size=lg]:*:size-10 mb-5",
 				className
 			)}
 			{...props}
@@ -48,11 +48,20 @@ function CardIcon({
 	);
 }
 
-function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
+function CardTitle({
+	className,
+	size = "default",
+	...props
+}: React.ComponentProps<"div"> & { size?: "sm" | "default" }) {
 	return (
 		<div
 			data-slot="card-title"
-			className={cn("font-heading text-3xl font-semibold group-data-[size=sm]/card:text-xl", className)}
+			data-size={size}
+			className={cn(
+				"font-heading text-3xl font-semibold group-data-[size=sm]/card:text-xl",
+				"data-[size=sm]:text-xl",
+				className
+			)}
 			{...props}
 		/>
 	);
