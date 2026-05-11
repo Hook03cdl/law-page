@@ -3,7 +3,7 @@ import { ContainerItem, ContainerContent, ContainerTitle, ContainerHeader } from
 
 export default function OurLegacy() {
 	return (
-		<ContainerItem className="grid grid-cols-3 gap-10 min-h-[calc(100svh-80px)]">
+		<ContainerItem className="grid grid-cols-3 gap-10 max-2xl:min-h-[calc(100svh-80px)]">
 			<ContainerContent>
 				<ContainerTitle>
 					<span className="relative after:absolute after:top-full after:left-0 after:h-1 after:w-full after:bg-secondary">
@@ -18,6 +18,7 @@ export default function OurLegacy() {
 						src={"/images/tower.jpg"}
 						alt={"Tower"}
 						fill
+						loading="eager"
 						className="object-cover"
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					/>

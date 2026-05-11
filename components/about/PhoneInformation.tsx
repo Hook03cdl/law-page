@@ -12,15 +12,15 @@ export default function PhoneInformation() {
 						<ContainerTitle>Alcance global, autoridad local.</ContainerTitle>
 					</ContainerHeader>
 					<ContainerContent className="space-y-10">
-						<Link href={""} className="h-20 flex justify-between items-center border-b hover:bg-surface">
+						<Link href={"/"} className="h-20 flex justify-between items-center border-b hover:bg-surface">
 							<div>
 								<p className="text-secondary">México</p>
 								<p className="font-bold text-primary">+52 (000) 000 0000</p>
 							</div>
 							<ArrowRight className="text-primary/30" />
 						</Link>
-						<Link href={""} className="h-20 flex justify-between items-center border-b hover:bg-surface">
-							<div className="pb-5">
+						<Link href={"/"} className="h-20 flex justify-between items-center border-b hover:bg-surface">
+							<div>
 								<p className="text-secondary">United Stated</p>
 								<p className="font-bold text-primary">+1 (00) 0000 0000</p>
 							</div>
