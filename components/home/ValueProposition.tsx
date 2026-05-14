@@ -38,23 +38,21 @@ export default function ValueProposition() {
 							<Shield />
 						</div>
 						<div>
-							<p className="text-primary text-lg font-heading font-bold">Bilingual Proficiency</p>
-							<p>Native fluency in both legal systems and languages ensures nothing is lost in translation.</p>
+							<p className="text-primary text-lg font-heading font-bold">Maximum Confidentiality</p>
+							<p>We prioritize the absolute privacy and security of our high- tier corporate clients.</p>
 						</div>
 					</div>
 				</div>
 			</ContainerContent>
 			<ContainerContent className="col-span-7 grid grid-cols-2 gap-5">
-				{/* <div className="relative h-full w-auto"> */}
 				<Image
 					src={"/images/office.jpg"}
 					alt={"office"}
 					height={800}
 					width={600}
-					className="object-contain"
+					className="object-cover h-full"
 					sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,(max-width: 1600px) 40vw,33vw"
 				/>
-				{/* </div> */}
 
 				<div className="grid grid-rows-2 gap-5">
 					<Card className="flex justify-center size-full bg-primary text-primary-foreground">

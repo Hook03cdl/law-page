@@ -7,7 +7,7 @@ export default function Footer() {
 	const year = new Date().getFullYear();
 	return (
 		<footer className="container mx-auto">
-			<div className="grid grid-cols-4 gap-10 py-20 px-10">
+			<div className="grid grid-cols-3 gap-20 py-20 px-10">
 				<div className="grid gap-5">
 					<Logo />
 					<p className="text-sm text-accent/70">
@@ -30,23 +30,9 @@ export default function Footer() {
 						contact@legalauthority.com
 					</Link>
 				</address>
-				<nav className="flex flex-col gap-5">
-					<p className="text-sm font-bold text-accent">LEGAL LINKS</p>
-					<ul className="flex flex-col gap-5 text-accent/70">
-						<li>
-							<Link href={"/"}>Privacy Policy</Link>
-						</li>
-						<li>
-							<Link href={"/"}>Terms of Service</Link>
-						</li>
-						<li>
-							<Link href={"/"}>Compliance</Link>
-						</li>
-					</ul>
-				</nav>
 				<address className="flex flex-col gap-5">
-					<p className="text-sm font-bold text-accent">HEADQUARTERS</p>
-					<p className="text-accent/70">Corporate HQ, Reforma 222, MX 06600, Mexico City</p>
+					<p className="text-sm font-bold text-accent">Location</p>
+					<p className="text-accent/70">Gral Manuel Márquez de León 2340, Zona Central, 23000 La Paz, B.C.S.</p>
 				</address>
 			</div>
 			<div className="p-10">

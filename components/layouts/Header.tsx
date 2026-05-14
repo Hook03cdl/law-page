@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Logo from "../common/Logo";
-import { Button } from "../ui/button";
+// import { Button } from "../ui/button";
 import { usePathname } from "next/navigation";
 
 const links: { label: string; href: string }[] = [
@@ -47,11 +47,11 @@ export default function Header() {
 					<li>
 						<Link href="/">EN/ES</Link>
 					</li>
-					<li>
+					{/* <li>
 						<Button className="bg-accent font-body" asChild size={"sm"}>
-							<Link href="/">SCHEDULE CONSULTATION</Link>
+							<Link href="/contact">SCHEDULE CONSULTATION</Link>
 						</Button>
-					</li>
+					</li> */}
 				</ul>
 			</nav>
 		</header>

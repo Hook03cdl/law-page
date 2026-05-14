@@ -12,6 +12,7 @@ import { Card, CardContent, CardHeader, CardIcon, CardTitle } from "@/components
 import { specialities } from "@/data/specialties";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "Specialties",
@@ -67,14 +68,9 @@ export default function SpecialtiesPage() {
 						</ContainerDescription>
 					</ContainerHeader>
 					<ContainerContent>
-						<div className="flex gap-5">
-							<Button size={"xl"} className="bg-accent-foreground text-primary">
-								SCHEDULE CONSULTATION
-							</Button>
-							<Button size={"xl"} variant={"outline"} className="text-accent-foreground">
-								CONTACT SUPPORT
-							</Button>
-						</div>
+						<Button size={"lg"} variant={"inverted"} asChild>
+							<Link href="/contact">SCHEDULE CONSULTATION</Link>
+						</Button>
 					</ContainerContent>
 				</div>
 			</ContainerItem>

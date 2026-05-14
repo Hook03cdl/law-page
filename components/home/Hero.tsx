@@ -2,6 +2,7 @@ import Image from "next/image";
 import {
 	ContainerContent,
 	ContainerDescription,
+	ContainerHeader,
 	ContainerItem,
 	ContainerTagline,
 	ContainerTitle,
@@ -13,19 +14,23 @@ import Link from "next/link";
 export default function Hero() {
 	return (
 		<ContainerItem className="grid grid-cols-12 max-2xl:min-h-[calc(100svh-80px)] pt-5">
-			<ContainerContent className="col-span-7 grid place-content-center space-y-6">
-				<ContainerTagline>UNRIVALED LEGAL REPRESENTATION</ContainerTagline>
-				<ContainerTitle className="text-6xl">Authority Built on Decades of Trust.</ContainerTitle>
-				<ContainerDescription className="max-w-xl">
-					Navigating high-stakes cross-border legalities with surgical precision. We provide architectural restraint to
-					your legal challenges, ensuring stability in Mexico and the United States.
-				</ContainerDescription>
-				<div className="flex gap-5 pt-5">
+			<ContainerContent className="col-span-7 flex flex-col justify-center">
+				<ContainerHeader>
+					<ContainerTagline>UNRIVALED LEGAL REPRESENTATION</ContainerTagline>
+					<ContainerTitle size="xl" className="max-w-xl">
+						Authority Built on Decades of Trust.
+					</ContainerTitle>
+					<ContainerDescription className="max-w-xl">
+						Navigating high-stakes cross-border legalities with surgical precision. We provide architectural restraint
+						to your legal challenges, ensuring stability in Mexico and the United States.
+					</ContainerDescription>
+				</ContainerHeader>
+				<div className="flex gap-5 pt-10">
 					<Button size={"lg"} asChild>
-						<Link href={"/"}>OUR SPECIALTIES</Link>
+						<Link href={"/contact"}>OUR SPECIALTIES</Link>
 					</Button>
 					<Button size={"lg"} variant={"outline"} asChild>
-						<Link href={"/"}>THE FIRM</Link>
+						<Link href={"/contact"}>SCHEDULE CONSULTATION</Link>
 					</Button>
 				</div>
 			</ContainerContent>

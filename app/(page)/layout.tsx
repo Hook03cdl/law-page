@@ -1,3 +1,4 @@
+import FloatButtonWhatsapp from "@/components/common/FloatButtonWhatsapp";
 import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
 
@@ -9,6 +10,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
 	return (
 		<>
 			<Header />
+			<FloatButtonWhatsapp />
 			{children}
 			<Footer />
 		</>

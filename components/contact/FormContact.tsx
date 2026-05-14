@@ -11,7 +11,7 @@ import { Button } from "../ui/button";
 import { ContactProps } from "@/types/contact";
 
 export default function FormContact() {
-	const { control, handleSubmit, formState } = useForm<ContactProps>({
+	const { control, handleSubmit } = useForm<ContactProps>({
 		defaultValues: { email: "", fullname: "", message: "", phone_number: "", subject: specialities[0].name },
 	});
 
@@ -95,9 +95,7 @@ export default function FormContact() {
 								/>
 							)}
 						/>
-						<Button size={"lg"} disabled={!formState.isValid}>
-							Submit
-						</Button>
+						<Button size={"lg"}>SUBMIT INQUIRY</Button>
 					</div>
 				</form>
 			</CardContent>

@@ -23,8 +23,8 @@ export default function ContactPage() {
 						<ContainerTitle size="xl">Establish Contact.</ContainerTitle>
 					</ContainerHeader>
 					<p>
-						Our cross-border legal team is prepared to assist with your most complex international requirements. Reach
-						out to our Mexico City or New York offices directly.
+						Our cross-border legal team is ready to assist you with your most complex international needs. Contact our
+						offices in Mexico directly.
 					</p>
 					<div className="border-l-2 border-l-border pl-5 space-y-10">
 						<div>

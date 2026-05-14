@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
 	ContainerContent,
 	ContainerDescription,
@@ -22,8 +23,8 @@ export default function ConsultationBanner() {
 				</div>
 			</ContainerHeader>
 			<ContainerContent className="flex justify-center">
-				<Button variant={"secondary"} size={"xl"}>
-					SCHEDULE YOUR CONSULTATION
+				<Button variant={"inverted"} size={"xl"} asChild>
+					<Link href={"/contact"}>SCHEDULE YOUR CONSULTATION</Link>
 				</Button>
 			</ContainerContent>
 		</ContainerItem>
