@@ -119,5 +119,13 @@
     "contact": "Contacto",
     "location": "Ubicación",
     "all-rights": "RESERVADOS TODOS LOS DERECHOS."
+  },
+  "NotFoundPage": {
+    "label": "Rutas no encontradas",
+    "title": "No pudimos encontrar esa página.",
+    "description": "Es posible que la página que estás buscando haya sido movida, renombrada o eliminada. \nVuelva a verificar la URL o regrese al lugar de donde vino.",
+    "btnPrimary": "Ir a casa",
+    "support": "Contactar con soporte",
+    "btnBack": "Atrás"
   }
 }

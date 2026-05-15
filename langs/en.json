@@ -119,5 +119,13 @@
     "contact": "Contact",
     "all-rights": "ALL RIGHTS RESERVED.",
     "location": "Location"
+  },
+  "NotFoundPage": {
+    "label": "Routes not found",
+    "title": "We couldn't find that page",
+    "description": "The page you're looking for may have been moved, renamed, or removed. Double-check the URL or head back to where you came from.",
+    "btnPrimary": "Go to Home",
+    "support": "Contact support",
+    "btnBack": "Back"
   }
 }
