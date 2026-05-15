@@ -9,18 +9,20 @@ import {
 } from "../common/Container";
 import { Button } from "../ui/button";
 import dynamic from "next/dynamic";
+import { getTranslations } from "next-intl/server";
 
 const ListSpecialities = dynamic(() => import("../common/ListSpecialities"), { ssr: true });
 
-export default function CoreSpecialties() {
+export default async function CoreSpecialties() {
+	const t = await getTranslations("HomePage.core");
 	return (
 		<ContainerItem className="bg-surface">
 			<ContainerHeader>
-				<ContainerTagline>PRECISION JURISPRUDENCE</ContainerTagline>
-				<ContainerTitle>Core Specialties</ContainerTitle>
+				<ContainerTagline>{t("tagline")}</ContainerTagline>
+				<ContainerTitle>{t("title")}</ContainerTitle>
 				<ContainerAction>
 					<Button variant={"link"} asChild>
-						<Link href={"/specialties"}>VIEW ALL AREAS</Link>
+						<Link href={"/specialtie"}>{t("link")}</Link>
 					</Button>
 				</ContainerAction>
 			</ContainerHeader>

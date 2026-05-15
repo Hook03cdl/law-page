@@ -5,13 +5,11 @@ import { NextIntlClientProvider } from "next-intl";
 
 export default function LocalesLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<>
-			<NextIntlClientProvider>
-				<Header />
-				<FloatButtonWhatsapp />
-				{children}
-				<Footer />
-			</NextIntlClientProvider>
-		</>
+		<NextIntlClientProvider>
+			<Header />
+			<FloatButtonWhatsapp />
+			{children}
+			<Footer />
+		</NextIntlClientProvider>
 	);
 }

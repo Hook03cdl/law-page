@@ -1,131 +1,164 @@
 {
-  "HomePage": {
-    "hero": {
-      "tagLine": "REPRESENTACIÓN JURÍDICA INIGUALABLE",
-      "title": "Autoridad construida sobre décadas de confianza.",
-      "description": "Navegando legalidades transfronterizas de alto riesgo con precisión quirúrgica. \nBrindamos contención arquitectónica a sus desafíos legales, asegurando estabilidad en México y Estados Unidos.",
-      "btnPrimary": "NUESTRAS ESPECIALIDADES",
-      "btnSecondary": "PROGRAMAR CONSULTA"
-    }
-  },
-  "Header": {
-    "specialties": "Especialidades",
-    "about": "Sobre nosotros",
-    "contact": "Contacto"
-  },
-  "SpecialtiesPage": {
-    "tagLine": "EXPERIENCIA JURÍDICA",
-    "description": "Navegar por las complejidades del derecho transfronterizo requiere algo más que conocimientos jurídicos; \nExige precisión arquitectónica y una perspectiva global. \nOfrecemos representación de alto nivel en las siguientes áreas de práctica.",
-    "title": "Nuestras Especialidades",
-    "subtitle": "Discuta su caso",
-    "subdescription": "La consulta profesional es el primer paso hacia la estabilidad jurídica arquitectónica. \nConéctese con nuestros expertos hoy.",
-    "btn": "PROGRAMAR CONSULTA"
-  },
-  "specialties": {
-    "0": {
-      "title": "Derecho familiar",
-      "description": "Orientación estratégica para fusiones, adquisiciones y estructuraciones transfronterizas complejas."
-    },
-    "1": {
-      "title": "Litigio",
-      "description": "Asegurar activos de alto valor y navegar por las regulaciones inmobiliarias internacionales."
-    },
-    "2": {
-      "title": "Derecho mercantil",
-      "description": "Orientación estratégica para adquisiciones y desarrollo de propiedades residenciales y comerciales de alto valor."
-    },
-    "3": {
-      "title": "Testamentos e intestado",
-      "description": "Defensa de alto riesgo con enfoque en el arbitraje y la excelencia en la resolución."
-    },
-    "4": {
-      "title": "Migratorio",
-      "description": "Optimizar la eficiencia fiscal para entidades multinacionales y personas de alto patrimonio."
-    }
-  },
-  "AboutPage": {
-    "title": "Arquitectura de la Justicia. \nLa moderación en la práctica.",
-    "description": "Fundada sobre los principios de estabilidad y meticulosa inteligencia transfronteriza, Legal Authority opera en la intersección del derecho corporativo de alto riesgo y la precisión arquitectónica. \nNo nos limitamos a representar; \nconstruimos marcos para la seguridad jurídica a largo plazo.",
-    "established": "ESTABLECIDO 1994",
-    "landscape": "En el complejo panorama de las relaciones entre México y Estados Unidos, el silencio es a menudo la estrategia más poderosa y la precisión el único resultado aceptable.",
-    "legacy": {
-      "title": "Nuestro legado",
-      "subtitle": "Tres décadas de soberanía",
-      "description": "Lo que comenzó como una asesoría boutique para emprendimientos arquitectónicos transfronterizos en La Paz ha evolucionado hasta convertirse en una autoridad legal integral. \nCerramos la brecha entre jurisdicciones, asegurando que los activos corporativos permanecieran protegidos bajo las interpretaciones más estrictas del derecho internacional.",
-      "subdescription": "Nuestra historia está definida por los casos que no tuvimos que litigar: acuerdos tan herméticos que excluyeron la posibilidad de disputas."
-    },
-    "pillars": {
-      "0": {
-        "title": "Restricción absoluta",
-        "description": "Operamos con eficiencia silenciosa. \nSin ruido innecesario, sin litigios performativos. \nSólo movimientos estratégicos que den resultados definitivos."
-      },
-      "1": {
-        "title": "Integridad estructural",
-        "description": "Cada contrato que redactamos es una hazaña arquitectónica. \nConstruimos estructuras legales diseñadas para resistir las presiones de los mercados fluctuantes y los climas políticos cambiantes."
-      },
-      "2": {
-        "title": "Fluidez transfronteriza",
-        "description": "Traducimos marcos legales complejos entre México y Estados Unidos, brindando un puente transparente para los intereses corporativos multinacionales."
-      },
-      "tagLine": "MISIÓN",
-      "title": "Los pilares del -Marca-"
-    },
-    "leadership": {
-      "tagline": "LIDERAZGO",
-      "title": "Los arquitectos de la firma",
-      "description": "Nuestros socios aportan un promedio de 25 años de experiencia en arbitraje internacional y gobierno corporativo."
-    },
-    "information": {
-      "title": "Alcance global, autoridad local.",
-      "us": "Estados Unidos"
-    }
-  },
-  "ContactPage": {
-    "title": "Establecer contacto.",
-    "description": "Nuestro equipo legal está listo para ayudarlo con sus necesidades internacionales más complejas. \nContacta directamente con nuestras oficinas en México.",
-    "us": "Estados Unidos",
-    "email": "Correo electrónico",
-    "btnMap": "Abrir mapas",
-    "form": {
-      "title": "Consulta inicial",
-      "btnSubmit": "ENVIAR CONSULTA",
-      "input": {
-        "name": {
-          "error": "Introduce tu nombre completo",
-          "label": "NOMBRE COMPLETO",
-          "placeholder": "Juan Pérez"
-        },
-        "email": {
-          "error": "Introduce tu correo electrónico",
-          "label": "Correo electrónico"
-        },
-        "phone": {
-          "error": "Introduce tu número de teléfono",
-          "label": "Número de teléfono"
-        },
-        "subject": {
-          "label": "Sujeto"
-        },
-        "message": {
-          "error": "Ingresa tu mensaje",
-          "label": "Mensaje",
-          "placeholder": "Proporcione una breve descripción de su caso..."
-        }
-      }
-    }
-  },
-  "Footer": {
-    "description": "La moderación arquitectónica en el derecho. \nProporcionar representación de alto riesgo con meticulosa atención al detalle.",
-    "contact": "Contacto",
-    "location": "Ubicación",
-    "all-rights": "RESERVADOS TODOS LOS DERECHOS."
-  },
-  "NotFoundPage": {
-    "label": "Rutas no encontradas",
-    "title": "No pudimos encontrar esa página.",
-    "description": "Es posible que la página que estás buscando haya sido movida, renombrada o eliminada. \nVuelva a verificar la URL o regrese al lugar de donde vino.",
-    "btnPrimary": "Ir a casa",
-    "support": "Contactar con soporte",
-    "btnBack": "Atrás"
-  }
+	"HomePage": {
+		"hero": {
+			"tagLine": "REPRESENTACIÓN JURÍDICA INIGUALABLE",
+			"title": "Autoridad construida sobre décadas de confianza.",
+			"description": "Navegando legalidades transfronterizas de alto riesgo con precisión quirúrgica. \nBrindamos contención arquitectónica a sus desafíos legales, asegurando estabilidad en México y Estados Unidos.",
+			"btnPrimary": "NUESTRAS ESPECIALIDADES",
+			"btnSecondary": "PROGRAMAR CONSULTA"
+		},
+		"proposition": {
+			"0": {
+				"description": "La fluidez nativa tanto en sistemas legales como en idiomas garantiza que no se pierda nada en la traducción.",
+				"title": "Competencia bilingüe"
+			},
+			"1": {
+				"description": "Priorizamos la absoluta privacidad y seguridad de nuestros clientes corporativos de alto nivel.",
+				"title": "Máxima Confidencialidad"
+			},
+			"tagline": "EXCELENCIA DISTINTIVA",
+			"title": "La moderación arquitectónica en la estrategia jurídica.",
+			"description": "Creemos que las soluciones legales más efectivas se construyen con un cuidado meticuloso e integridad estructural. \nNuestra firma opera en la intersección de las leyes mexicanas y estadounidenses, proporcionando un puente transparente para los intereses globales.",
+			"card": {
+				"0": {
+					"title": "Alcance global",
+					"description": "Conectando los centros financieros de México y Estados Unidos."
+				},
+				"1": {
+					"title": "Integridad del documento",
+					"description": "Alineación rígida y atención al detalle en cada contrato."
+				}
+			}
+		},
+		"core": {
+			"tagline": "JURISPRUDENCIA DE PRECISIÓN",
+			"title": "Especialidades principales",
+			"link": "VER TODAS LAS ÁREAS"
+		},
+		"banner": {
+			"title": "¿Listo para asegurar su autoridad legal?",
+			"description": "Consulte hoy con nuestros socios principales para analizar su estrategia transfronteriza y proteger sus intereses con una representación de clase mundial.",
+			"button": "PROGRAMA TU CONSULTA"
+		}
+	},
+	"Header": {
+		"specialties": "Especialidades",
+		"about": "Sobre nosotros",
+		"contact": "Contacto"
+	},
+	"SpecialtiesPage": {
+		"tagLine": "EXPERIENCIA JURÍDICA",
+		"description": "Navegar por las complejidades del derecho transfronterizo requiere algo más que conocimientos jurídicos; \nExige precisión arquitectónica y una perspectiva global. \nOfrecemos representación de alto nivel en las siguientes áreas de práctica.",
+		"title": "Nuestras Especialidades",
+		"subtitle": "Discuta su caso",
+		"subdescription": "La consulta profesional es el primer paso hacia la estabilidad jurídica arquitectónica. \nConéctese con nuestros expertos hoy.",
+		"btn": "PROGRAMAR CONSULTA"
+	},
+	"specialties": {
+		"0": {
+			"title": "Derecho familiar",
+			"description": "Orientación estratégica para fusiones, adquisiciones y estructuraciones transfronterizas complejas."
+		},
+		"1": {
+			"title": "Litigio",
+			"description": "Asegurar activos de alto valor y navegar por las regulaciones inmobiliarias internacionales."
+		},
+		"2": {
+			"title": "Derecho mercantil",
+			"description": "Orientación estratégica para adquisiciones y desarrollo de propiedades residenciales y comerciales de alto valor."
+		},
+		"3": {
+			"title": "Testamentos e intestado",
+			"description": "Defensa de alto riesgo con enfoque en el arbitraje y la excelencia en la resolución."
+		},
+		"4": {
+			"title": "Migratorio",
+			"description": "Optimizar la eficiencia fiscal para entidades multinacionales y personas de alto patrimonio."
+		}
+	},
+	"AboutPage": {
+		"title": "Arquitectura de la Justicia. \nLa moderación en la práctica.",
+		"description": "Fundada sobre los principios de estabilidad y meticulosa inteligencia transfronteriza, Legal Authority opera en la intersección del derecho corporativo de alto riesgo y la precisión arquitectónica. \nNo nos limitamos a representar; \nconstruimos marcos para la seguridad jurídica a largo plazo.",
+		"established": "ESTABLECIDO 1994",
+		"landscape": "En el complejo panorama de las relaciones entre México y Estados Unidos, el silencio es a menudo la estrategia más poderosa y la precisión el único resultado aceptable.",
+		"legacy": {
+			"title": "Nuestro legado",
+			"subtitle": "Tres décadas de soberanía",
+			"description": "Lo que comenzó como una asesoría boutique para emprendimientos arquitectónicos transfronterizos en La Paz ha evolucionado hasta convertirse en una autoridad legal integral. \nCerramos la brecha entre jurisdicciones, asegurando que los activos corporativos permanecieran protegidos bajo las interpretaciones más estrictas del derecho internacional.",
+			"subdescription": "Nuestra historia está definida por los casos que no tuvimos que litigar: acuerdos tan herméticos que excluyeron la posibilidad de disputas."
+		},
+		"pillars": {
+			"0": {
+				"title": "Restricción absoluta",
+				"description": "Operamos con eficiencia silenciosa. \nSin ruido innecesario, sin litigios performativos. \nSólo movimientos estratégicos que den resultados definitivos."
+			},
+			"1": {
+				"title": "Integridad estructural",
+				"description": "Cada contrato que redactamos es una hazaña arquitectónica. \nConstruimos estructuras legales diseñadas para resistir las presiones de los mercados fluctuantes y los climas políticos cambiantes."
+			},
+			"2": {
+				"title": "Fluidez transfronteriza",
+				"description": "Traducimos marcos legales complejos entre México y Estados Unidos, brindando un puente transparente para los intereses corporativos multinacionales."
+			},
+			"tagLine": "MISIÓN",
+			"title": "Los pilares del -Marca-"
+		},
+		"leadership": {
+			"tagline": "LIDERAZGO",
+			"title": "Los arquitectos de la firma",
+			"description": "Nuestros socios aportan un promedio de 25 años de experiencia en arbitraje internacional y gobierno corporativo."
+		},
+		"information": {
+			"title": "Alcance global, autoridad local.",
+			"us": "Estados Unidos"
+		}
+	},
+	"ContactPage": {
+		"title": "Establecer contacto.",
+		"description": "Nuestro equipo legal está listo para ayudarlo con sus necesidades internacionales más complejas. \nContacta directamente con nuestras oficinas en México.",
+		"us": "Estados Unidos",
+		"email": "Correo electrónico",
+		"btnMap": "Abrir mapas",
+		"form": {
+			"title": "Consulta inicial",
+			"btnSubmit": "ENVIAR CONSULTA",
+			"input": {
+				"name": {
+					"error": "Introduce tu nombre completo",
+					"label": "NOMBRE COMPLETO",
+					"placeholder": "Juan Pérez"
+				},
+				"email": {
+					"error": "Introduce tu correo electrónico",
+					"label": "Correo electrónico"
+				},
+				"phone": {
+					"error": "Introduce tu número de teléfono",
+					"label": "Número de teléfono"
+				},
+				"subject": {
+					"label": "Sujeto"
+				},
+				"message": {
+					"error": "Ingresa tu mensaje",
+					"label": "Mensaje",
+					"placeholder": "Proporcione una breve descripción de su caso..."
+				}
+			}
+		}
+	},
+	"Footer": {
+		"description": "La moderación arquitectónica en el derecho. \nProporcionar representación de alto riesgo con meticulosa atención al detalle.",
+		"contact": "Contacto",
+		"location": "Ubicación",
+		"all-rights": "RESERVADOS TODOS LOS DERECHOS."
+	},
+	"NotFoundPage": {
+		"label": "Rutas no encontradas",
+		"title": "No pudimos encontrar esa página.",
+		"description": "Es posible que la página que estás buscando haya sido movida, renombrada o eliminada. \nVuelva a verificar la URL o regrese al lugar de donde vino.",
+		"btnPrimary": "Ir a casa",
+		"support": "Contactar con soporte",
+		"btnBack": "Regresar"
+	}
 }

@@ -1,13 +1,13 @@
-"use client";
-import { Button } from "@/components/ui/button";
-import { Home, Mail } from "lucide-react";
-import { useTranslations } from "next-intl";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 
-export default function NotFound() {
-	const router = useRouter();
-	const t = useTranslations("NotFoundPage");
+import ButtonBack from "@/components/notfound/ButtonBack";
+import { Button } from "@/components/ui/button";
+import { Home, Undo2 } from "lucide-react";
+import { getTranslations } from "next-intl/server";
+import Link from "next/link";
+
+export default async function NotFound() {
+	const t = await getTranslations("NotFoundPage");
+	// const router = useRouter();
 	return (
 		<div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white font-sans">
 			{/* Badge */}
@@ -36,19 +36,10 @@ export default function NotFound() {
 						{t("btnPrimary")}
 					</Link>
 				</Button>
-				<Button variant={"outline"} asChild>
-					<Link href="/contact">
-						<Mail />
-						{t("support")}
-					</Link>
-				</Button>
-			</div>
-
-			{/* Footer links */}
-			<div className="flex items-center gap-2 mt-10 text-gray-400 flex-wrap justify-center ">
-				<button className="text-blue-600 hover:underline" onClick={() => router.back()}>
-					{t("btnBack")}
-				</button>
+				<ButtonBack>
+					<Undo2 />
+					<span>{t("btnBack")}</span>
+				</ButtonBack>
 			</div>
 		</div>
 	);

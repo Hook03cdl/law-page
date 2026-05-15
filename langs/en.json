@@ -6,6 +6,39 @@
       "description": "Navigating high-stakes cross-border legalities with surgical precision. We provide architectural restraint to your legal challenges, ensuring stability in Mexico and the United States.",
       "btnPrimary": "OUR SPECIALTIES",
       "btnSecondary": "SCHEDULE CONSULTATION"
+    },
+    "proposition": {
+      "0": {
+        "title": "Bilingual Proficiency",
+        "description": "Native fluency in both legal systems and languages ensures nothing is lost in translation."
+      },
+      "1": {
+        "title": "Maximum Confidentiality",
+        "description": "We prioritize the absolute privacy and security of our high- tier corporate clients."
+      },
+      "tagline": "DISTINCTIVE EXCELLENCE",
+      "title": "Architectural Restraint in Legal Strategy.",
+      "description": "We believe that the most effective legal solutions are built with meticulous care and structural integrity. Our firm operates at the intersection of Mexican and U.S. law, providing a seamless bridge for global interests.",
+      "card": {
+        "0": {
+          "title": "Global Reach",
+          "description": "Connecting the financial hubs of Mexico and United Stated."
+        },
+        "1": {
+          "title": "Document Integrity",
+          "description": "Rigid alignment and attention to detail in every contract."
+        }
+      }
+    },
+    "core": {
+      "tagline": "PRECISION JURISPRUDENCE",
+      "title": "Core Specialties",
+      "link": "VIEW ALL AREAS"
+    },
+    "banner": {
+      "title": "Ready to Secure Your Legal Authority?",
+      "description": "Consult with our senior partners today to discuss your cross-border strategy and secure your interests with world-class representation.",
+      "button": "SCHEDULE YOUR CONSULTATION"
     }
   },
   "Header": {

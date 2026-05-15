@@ -9,19 +9,17 @@ import {
 } from "../common/Container";
 import { Card, CardHeader, CardTitle, CardDescription } from "../ui/card";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
-export default function ValueProposition() {
+export default async function ValueProposition() {
+	const t = await getTranslations("HomePage.proposition");
 	return (
 		<ContainerItem className="grid grid-cols-12 gap-10">
 			<ContainerContent className="col-span-5 space-y-15">
 				<ContainerHeader>
-					<ContainerTagline>DISTINCTIVE EXCELLENCE</ContainerTagline>
-					<ContainerTitle>Architectural Restraint in Legal Strategy.</ContainerTitle>
-					<ContainerDescription>
-						We believe that the most effective legal solutions are built with meticulous care and structural integrity.
-						Our firm operates at the intersection of Mexican and U.S. law, providing a seamless bridge for global
-						interests.
-					</ContainerDescription>
+					<ContainerTagline>{t("tagline")}</ContainerTagline>
+					<ContainerTitle>{t("title")}</ContainerTitle>
+					<ContainerDescription>{t("description")}</ContainerDescription>
 				</ContainerHeader>
 				<div className="space-y-10">
 					<div className="flex gap-2">
@@ -29,8 +27,8 @@ export default function ValueProposition() {
 							<BadgeCheck />
 						</div>
 						<div>
-							<p className="text-primary text-lg font-heading font-bold">Bilingual Proficiency</p>
-							<p>Native fluency in both legal systems and languages ensures nothing is lost in translation.</p>
+							<p className="text-primary text-lg font-heading font-bold">{t("0.title")}</p>
+							<p>{t("0.description")}</p>
 						</div>
 					</div>
 					<div className="flex gap-2">
@@ -38,8 +36,8 @@ export default function ValueProposition() {
 							<Shield />
 						</div>
 						<div>
-							<p className="text-primary text-lg font-heading font-bold">Maximum Confidentiality</p>
-							<p>We prioritize the absolute privacy and security of our high- tier corporate clients.</p>
+							<p className="text-primary text-lg font-heading font-bold">{t("1.title")}</p>
+							<p>{t("1.description")}</p>
 						</div>
 					</div>
 				</div>
@@ -58,15 +56,15 @@ export default function ValueProposition() {
 					<Card className="flex justify-center size-full bg-primary text-primary-foreground">
 						<CardHeader className="space-y-5">
 							<Earth className="text-secondary size-10" />
-							<CardTitle>Global Reach</CardTitle>
-							<CardDescription>Connecting the financial hubs of Mexico City and New York.</CardDescription>
+							<CardTitle>{t("card.0.title")}</CardTitle>
+							<CardDescription>{t("card.0.description")}</CardDescription>
 						</CardHeader>
 					</Card>
 					<Card className="flex justify-center size-full bg-secondary text-secondary-foreground">
 						<CardHeader className="space-y-5">
 							<ScrollText className="text-primary size-10" />
-							<CardTitle>Document Integrity</CardTitle>
-							<CardDescription>Rigid alignment and attention to detail in every contract.</CardDescription>
+							<CardTitle>{t("card.1.title")}</CardTitle>
+							<CardDescription>{t("card.1.description")}</CardDescription>
 						</CardHeader>
 					</Card>
 				</div>
