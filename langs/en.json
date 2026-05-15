@@ -1,0 +1,123 @@
+{
+  "HomePage": {
+    "hero": {
+      "tagLine": "UNRIVALED LEGAL REPRESENTATION",
+      "title": "Authority Built on Decades of Trust.",
+      "description": "Navigating high-stakes cross-border legalities with surgical precision. We provide architectural restraint to your legal challenges, ensuring stability in Mexico and the United States.",
+      "btnPrimary": "OUR SPECIALTIES",
+      "btnSecondary": "SCHEDULE CONSULTATION"
+    }
+  },
+  "Header": {
+    "specialties": "Specialties",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "SpecialtiesPage": {
+    "tagLine": "LEGAL EXPERTISE",
+    "description": "Navigating the complexities of cross-border law requires more than just legal knowledge; it demands architectural precision and a global perspective. We provide high-tier representation in the following practice areas.",
+    "subtitle": "Discuss Your Case",
+    "subdescription": "Professional consultation is the first step toward architectural legal stability. Connect with our experts today.",
+    "btn": "SCHEDULE CONSULTATION",
+    "title": "Our Specialties"
+  },
+  "specialties": {
+    "0": {
+      "title": "Family law",
+      "description": "Strategic guidance for complex mergers, acquisitions, and cross-border structuring."
+    },
+    "1": {
+      "title": "Litigation",
+      "description": "Securing high-value assets and navigating international property regulations."
+    },
+    "2": {
+      "title": "Commercial law",
+      "description": "Strategic guidance for high-value residential and commercial property acquisitions and development."
+    },
+    "3": {
+      "title": "Wills and intestacy",
+      "description": "High-stakes advocacy with a focus on arbitration and resolution excellence."
+    },
+    "4": {
+      "title": "Migratory",
+      "description": "Optimizing fiscal efficiency for multinational entities and high-net-worth individuals."
+    }
+  },
+  "AboutPage": {
+    "title": "Architecture of Justice. Restraint in Practice.",
+    "description": "Founded on the principles of stability and meticulous cross-border intelligence, Legal Authority operates at the intersection of high- stakes corporate law and architectural precision. We do not merely represent; we construct frameworks for long-term legal security.",
+    "established": "ESTABLISHED 1994",
+    "landscape": "In the complex landscape of MX/US relations, silence is often the most powerful strategy, and precision\tthe only acceptable outcome.",
+    "legacy": {
+      "title": "Our Legacy",
+      "subtitle": "Three Decades of Sovereignty",
+      "description": "What began as a boutique advisory for cross- border architectural ventures in La Paz has evolved into a comprehensive legal authority. We bridged the gap between jurisdictions, ensuring that corporate assets remained protected under the strictest interpretations of international law.",
+      "subdescription": "Our history is defined by the cases we didn't have to litigate—agreements so airtight they precluded the possibility of dispute."
+    },
+    "pillars": {
+      "0": {
+        "title": "Absolute Restraint",
+        "description": "We operate with quiet efficiency. No unnecessary noise, no performative litigation. Only strategic movements that yield definitive results."
+      },
+      "1": {
+        "title": "Structural Integrity",
+        "description": "Every contract we draft is an architectural feat. We build legal structures designed to withstand the pressures of fluctuating markets and changing political climates."
+      },
+      "2": {
+        "title": "Cross-Border Fluency",
+        "description": "We translate complex legal frameworks between Mexico and the United States, providing a seamless bridge for multi-national corporate interests."
+      },
+      "tagLine": "MISSION & CORE VALUES",
+      "title": "The Pillars of Name"
+    },
+    "leadership": {
+      "tagline": "LEADERSHIP",
+      "title": "The Architects of the Firm",
+      "description": "Our partners bring an average of 25 years of experience in international arbitration and corporate governance."
+    },
+    "information": {
+      "title": "Global reach, local authority.",
+      "us": "United Stated"
+    }
+  },
+  "ContactPage": {
+    "title": "Establish Contact.",
+    "description": "Our legal team is ready to assist you with your most complex international needs. Contact our offices in Mexico directly.",
+    "us": "United Stated",
+    "email": "Email",
+    "btnMap": "Open maps",
+    "form": {
+      "title": "Initial Inquiry",
+      "btnSubmit": "SUBMIT INQUIRY",
+      "input": {
+        "name": {
+          "label": "Full name",
+          "placeholder": "John Doe",
+          "error": "Enter your full name"
+        },
+        "email": {
+          "label": "Email address",
+          "error": "Enter your email"
+        },
+        "phone": {
+          "label": "Phone number",
+          "error": "Enter your phone number"
+        },
+        "subject": {
+          "label": "Subject"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Provide a brief overview of your case...",
+          "error": "Enter your menssage"
+        }
+      }
+    }
+  },
+  "Footer": {
+    "description": "Architectural restraint in law. Providing high-stakes representation with meticulous attention to detail.",
+    "contact": "Contact",
+    "all-rights": "ALL RIGHTS RESERVED.",
+    "location": "Location"
+  }
+}
