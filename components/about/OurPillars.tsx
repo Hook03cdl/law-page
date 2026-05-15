@@ -7,13 +7,15 @@ import {
 	ContainerTitle,
 } from "../common/Container";
 import { Card, CardContent, CardHeader, CardIcon, CardTitle } from "../ui/card";
+import { getTranslations } from "next-intl/server";
 
-export default function OurPillars() {
+export default async function OurPillars() {
+	const t = await getTranslations("AboutPage.pillars");
 	return (
 		<ContainerItem className="bg-primary text-primary-foreground">
 			<ContainerHeader>
-				<ContainerTagline>MISSION & CORE VALUES</ContainerTagline>
-				<ContainerTitle className="text-primary-foreground">The Pillars of Name</ContainerTitle>
+				<ContainerTagline>{t("tagLine")}</ContainerTagline>
+				<ContainerTitle className="text-primary-foreground">{t("title")}</ContainerTitle>
 			</ContainerHeader>
 			<ContainerContent>
 				<div className="grid grid-cols-3 gap-2 bg-accent/20 p-3">
@@ -22,13 +24,10 @@ export default function OurPillars() {
 							<CardIcon>
 								<Scale />
 							</CardIcon>
-							<CardTitle>Absolute Restraint</CardTitle>
+							<CardTitle>{t("0.title")}</CardTitle>
 						</CardHeader>
 						<CardContent>
-							<p>
-								We operate with quiet efficiency. No unnecessary noise, no performative litigation. Only strategic
-								movements that yield definitive results.
-							</p>
+							<p>{t("0.description")}</p>
 						</CardContent>
 					</Card>
 					<Card className="bg-primary text-accent-foreground">
@@ -36,13 +35,10 @@ export default function OurPillars() {
 							<CardIcon>
 								<DraftingCompass />
 							</CardIcon>
-							<CardTitle>Structural Integrity</CardTitle>
+							<CardTitle>{t("1.title")}</CardTitle>
 						</CardHeader>
 						<CardContent>
-							<p>
-								Every contract we draft is an architectural feat. We build legal structures designed to withstand the
-								pressures of fluctuating markets and changing political climates.
-							</p>
+							<p>{t("1.description")}</p>
 						</CardContent>
 					</Card>
 					<Card className="bg-primary text-accent-foreground">
@@ -50,13 +46,10 @@ export default function OurPillars() {
 							<CardIcon>
 								<Globe />
 							</CardIcon>
-							<CardTitle>Cross-Border Fluency</CardTitle>
+							<CardTitle>{t("2.title")}</CardTitle>
 						</CardHeader>
 						<CardContent>
-							<p>
-								We translate complex legal frameworks between Mexico and the United States, providing a seamless bridge
-								for multi- national corporate interests.
-							</p>
+							<p>{t("2.description")}</p>
 						</CardContent>
 					</Card>
 				</div>

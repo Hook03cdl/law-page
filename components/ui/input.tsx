@@ -13,7 +13,7 @@ function Input({ className, type = "text", id: inputId, errorMsg, label, ...prop
 	return (
 		<div className="w-full">
 			{label && (
-				<label htmlFor={id} className="text-xs font-bold font-body leading-tight">
+				<label htmlFor={id} className="text-xs font-bold font-body leading-tight uppercase">
 					{label}
 				</label>
 			)}

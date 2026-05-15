@@ -4,48 +4,55 @@ import { Input } from "../ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../ui/select";
-import { specialities } from "@/data/specialties";
 import { Textarea } from "../ui/textarea";
 import { InputTel } from "./InputTel";
 import { Button } from "../ui/button";
 import { ContactProps } from "@/types/contact";
+import useListSpecialties from "@/hooks/useListSpecialties";
+import { useTranslations } from "next-intl";
 
 export default function FormContact() {
+	const t = useTranslations("ContactPage.form");
+	const specialties = useListSpecialties();
 	const { control, handleSubmit } = useForm<ContactProps>({
-		defaultValues: { email: "", fullname: "", message: "", phone_number: "", subject: specialities[0].name },
+		defaultValues: { email: "", fullname: "", message: "", phone_number: "", subject: specialties[0].name },
 	});
 
 	const onSubmit: SubmitHandler<ContactProps> = (data) => {
-		// if (!(await validateContact(data))) return;
 		console.log(data);
 	};
 
 	return (
 		<Card>
 			<CardHeader className="mb-5">
-				<CardTitle>Initial Inquiry</CardTitle>
+				<CardTitle>{t("title")}</CardTitle>
 			</CardHeader>
 			<CardContent>
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<div className="space-y-5">
 						<fieldset className="flex gap-5 *:flex-1">
 							<Controller
-								rules={{ required: "Enter your full name" }}
+								rules={{ required: t("input.name.error") }}
 								name="fullname"
 								control={control}
 								render={({ field, fieldState: { error } }) => (
-									<Input {...field} label="FULL NAME" placeholder="John Doe" errorMsg={error?.message} />
+									<Input
+										{...field}
+										label={t("input.name.label")}
+										placeholder={t("input.name.placeholder")}
+										errorMsg={error?.message}
+									/>
 								)}
 							/>
 							<Controller
-								rules={{ required: "Enter your email" }}
+								rules={{ required: t("input.email.error") }}
 								name="email"
 								control={control}
 								render={({ field, fieldState: { error } }) => (
 									<Input
 										type="email"
 										{...field}
-										label="EMAIL ADDRESS"
+										label={t("input.email.label")}
 										placeholder="john.doe@example.com"
 										errorMsg={error?.message}
 									/>
@@ -53,11 +60,11 @@ export default function FormContact() {
 							/>
 						</fieldset>
 						<Controller
-							rules={{ required: "Enter your phone number" }}
+							rules={{ required: t("input.phone.error") }}
 							name="phone_number"
 							control={control}
 							render={({ field, fieldState: { error } }) => (
-								<InputTel {...field} label="PHONE NUMBER" errorMsg={error?.message} />
+								<InputTel {...field} label={t("input.phone.label")} errorMsg={error?.message} />
 							)}
 						/>
 						<Controller
@@ -65,13 +72,13 @@ export default function FormContact() {
 							control={control}
 							render={({ field, fieldState: { error } }) => (
 								<Select value={field.value} onValueChange={field.onChange}>
-									<SelectTrigger label="SUBJECT" errorMsg={error?.message}>
+									<SelectTrigger label={t("input.subject.label")} errorMsg={error?.message}>
 										<SelectValue />
 									</SelectTrigger>
 									<SelectContent>
 										<SelectGroup>
-											<SelectLabel>Subject</SelectLabel>
-											{specialities.map(({ name, icon: Icon }) => (
+											<SelectLabel>{t("input.subject.label")}</SelectLabel>
+											{specialties.map(({ name, icon: Icon }) => (
 												<SelectItem value={name} key={name}>
 													<Icon />
 													<span>{name}</span>
@@ -83,19 +90,19 @@ export default function FormContact() {
 							)}
 						/>
 						<Controller
-							rules={{ required: "Enter your menssage" }}
+							rules={{ required: t("input.message.error") }}
 							name="message"
 							control={control}
 							render={({ field, fieldState: { error } }) => (
 								<Textarea
 									{...field}
 									errorMsg={error?.message}
-									label="MESSAGE"
-									placeholder="Provide a brief overview of your case..."
+									label={t("input.message.label")}
+									placeholder={t("input.message.placeholder")}
 								/>
 							)}
 						/>
-						<Button size={"lg"}>SUBMIT INQUIRY</Button>
+						<Button size={"lg"}>{t("btnSubmit")}</Button>
 					</div>
 				</form>
 			</CardContent>

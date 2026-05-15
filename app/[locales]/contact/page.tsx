@@ -1,5 +1,3 @@
-"use client";
-
 import {
 	Container,
 	ContainerContent,
@@ -11,32 +9,31 @@ import FormContact from "@/components/contact/FormContact";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ContactPage() {
+export default async function ContactPage() {
+	const t = await getTranslations("ContactPage");
 	return (
 		<Container>
 			<ContainerItem className="grid grid-cols-12 gap-20">
 				<ContainerContent className="col-span-5 space-y-10">
 					<ContainerHeader>
-						<ContainerTitle size="xl">Establish Contact.</ContainerTitle>
+						<ContainerTitle size="xl">{t("title")}</ContainerTitle>
 					</ContainerHeader>
-					<p>
-						Our cross-border legal team is ready to assist you with your most complex international needs. Contact our
-						offices in Mexico directly.
-					</p>
+					<p>{t("description")}</p>
 					<div className="border-l-2 border-l-border pl-5 space-y-10">
 						<div>
-							<p className="text-secondary text-xs font-bold">MEXICO</p>
+							<p className="text-secondary text-xs font-bold uppercase">Mexico</p>
 							<p className="text-3xl font-heading font-semibold">+52 (000) 000 0000</p>
 						</div>
 						<div>
-							<p className="text-secondary text-xs font-bold">USA</p>
+							<p className="text-secondary text-xs font-bold uppercase">{t("us")}</p>
 							<p className="text-3xl font-heading font-semibold">+1 (000) 000 0000</p>
 						</div>
 						<div>
-							<p className="text-secondary text-xs font-bold">EMAIL</p>
+							<p className="text-secondary text-xs font-bold uppercase">{t("email")}</p>
 							<p className="text-lg font-body font-semibold">example@email.com</p>
 						</div>
 					</div>
@@ -64,7 +61,7 @@ export default function ContactPage() {
 					<CardFooter>
 						<Button variant={"link"} size={"xl"} className="text-secondary px-0" asChild>
 							<Link href={"/"}>
-								<span>Open maps</span>
+								<span>{t("btnMap")}</span>
 								<ExternalLink />
 							</Link>
 						</Button>

@@ -8,16 +8,16 @@ import {
 	ContainerTitle,
 } from "../common/Container";
 import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { getTranslations } from "next-intl/server";
 
-export default function Leadership() {
+export default async function Leadership() {
+	const t = await getTranslations("AboutPage.leadership");
 	return (
 		<ContainerItem>
 			<ContainerHeader>
-				<ContainerTagline>LEADERSHIP</ContainerTagline>
-				<ContainerTitle>The Architects of the Firm</ContainerTitle>
-				<ContainerDescription>
-					Our partners bring an average of 25 years of experience in international arbitration and corporate governance.
-				</ContainerDescription>
+				<ContainerTagline>{t("tagline")}</ContainerTagline>
+				<ContainerTitle>{t("title")}</ContainerTitle>
+				<ContainerDescription>{t("description")}</ContainerDescription>
 			</ContainerHeader>
 			<ContainerContent className="grid grid-cols-5 gap-5">
 				{Array.from({ length: 5 }, (_, i) => (

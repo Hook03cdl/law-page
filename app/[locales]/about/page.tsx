@@ -10,32 +10,26 @@ import {
 	ContainerTitle,
 } from "@/components/common/Container";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
 	title: "About us",
 };
 
-export default function AboutPage() {
+export default async function AboutPage() {
+	const t = await getTranslations("AboutPage");
 	return (
 		<Container>
 			<ContainerItem>
 				<ContainerHeader className="grid grid-cols-2 gap-10">
 					<div className="space-y-10">
-						<ContainerTitle size="xl">Architecture of Justice. Restraint in Practice.</ContainerTitle>
-						<ContainerDescription className="max-w-xl">
-							Founded on the principles of stability and meticulous cross-border intelligence, Legal Authority operates
-							at the intersection of high- stakes corporate law and architectural precision. We do not merely represent;
-							we construct frameworks for long-term legal security.
-						</ContainerDescription>
+						<ContainerTitle size="xl">{t("title")}</ContainerTitle>
+						<ContainerDescription className="max-w-xl">{t("description")}</ContainerDescription>
 					</div>
 					<div>
 						<div className="border border-border bg-surface p-10 mt-10 space-y-3">
-							<p className="text-secondary">ESTABLISHED 1994</p>
-							<p className="italic text-primary/80">
-								{
-									'"In the complex landscape of MX/US relations, silence is often the most powerful strategy, and precision	the only acceptable outcome."'
-								}
-							</p>
+							<p className="text-secondary">{t("established")}</p>
+							<p className={`italic text-primary/80 before:content-['"'] after:content-['"']`}>{t("landscape")}</p>
 						</div>
 					</div>
 				</ContainerHeader>

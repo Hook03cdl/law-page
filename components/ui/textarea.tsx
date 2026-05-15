@@ -12,7 +12,7 @@ export function Textarea({ label, errorMsg, id: inputId, className, ...props }: 
 	return (
 		<div>
 			{label && (
-				<label htmlFor={id} className="text-xs font-bold font-body leading-tight">
+				<label htmlFor={id} className="text-xs font-bold font-body leading-tight uppercase">
 					{label}
 				</label>
 			)}
