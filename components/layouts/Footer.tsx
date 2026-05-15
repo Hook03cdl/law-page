@@ -31,7 +31,7 @@ export default async function Footer() {
 					</Link>
 				</address>
 				<address className="flex flex-col gap-5">
-					<p className="text-sm font-bold text-accent">{t('location')}</p>
+					<p className="text-sm font-bold text-accent">{t("location")}</p>
 					<p className="text-accent/70">Gral Manuel Márquez de León 2340, Zona Central, 23000 La Paz, B.C.S.</p>
 				</address>
 			</div>

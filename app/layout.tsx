@@ -19,9 +19,9 @@ export default async function RootLayout({
 	params,
 }: Readonly<{
 	children: React.ReactNode;
-	params: Promise<{ locales: "es" | "en" }>;
+	params: { locales: "es" | "en" };
 }>) {
-	const { locales } = await params;
+	const { locales } = params;
 	return (
 		<html lang={locales} className={cn("h-full antialiased font-mono", heading.variable, body.variable)}>
 			<body className="min-h-full flex flex-col">{children}</body>
