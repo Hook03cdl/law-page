@@ -19,7 +19,7 @@ export default async function Leadership() {
 				<ContainerTitle>{t("title")}</ContainerTitle>
 				<ContainerDescription>{t("description")}</ContainerDescription>
 			</ContainerHeader>
-			<ContainerContent className="grid grid-cols-5 gap-5">
+			<ContainerContent className="grid md:grid-cols-3 xl:grid-cols-5 gap-5">
 				{Array.from({ length: 5 }, (_, i) => (
 					<Card key={i} className="ring-0">
 						<div className="relative w-full min-h-100 aspect-7/5">

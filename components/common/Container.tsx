@@ -23,7 +23,7 @@ export function ContainerItem({ className, ...props }: ContainerItemProps) {
 	return (
 		<section
 			data-slot="container-item"
-			className={cn("first:pt-5 md:first:pt-10 space-y-10 md:space-y-15 px-3 md:px-10 py-20 md:py-30", className)}
+			className={cn("first:pt-5 md:first:pt-10 space-y-10 md:space-y-15 px-3 md:px-10 py-15 md:py-30", className)}
 			{...props}
 		/>
 	);

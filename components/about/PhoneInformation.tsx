@@ -8,7 +8,7 @@ export default async function PhoneInformation() {
 	const t = await getTranslations("AboutPage.information");
 	return (
 		<ContainerItem>
-			<div className="grid grid-cols-2 gap-10">
+			<div className="grid lg:grid-cols-2 gap-10">
 				<div className="space-y-10">
 					<ContainerHeader>
 						<ContainerTitle>{t("title")}</ContainerTitle>
@@ -23,7 +23,7 @@ export default async function PhoneInformation() {
 						</Link>
 						<Link href={"/"} className="h-20 flex justify-between items-center border-b hover:bg-surface">
 							<div>
-								<p className="text-secondary">{t('us')}</p>
+								<p className="text-secondary">{t("us")}</p>
 								<p className="font-bold text-primary">+1 (00) 0000 0000</p>
 							</div>
 							<ArrowRight className="text-primary/30" />
