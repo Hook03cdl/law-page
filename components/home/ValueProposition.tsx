@@ -14,8 +14,8 @@ import { getTranslations } from "next-intl/server";
 export default async function ValueProposition() {
 	const t = await getTranslations("HomePage.proposition");
 	return (
-		<ContainerItem className="grid grid-cols-12 gap-10">
-			<ContainerContent className="col-span-5 space-y-15">
+		<ContainerItem className="grid lg:grid-cols-12 gap-5 lg:gap-10">
+			<ContainerContent className="lg:col-span-5 space-y-15">
 				<ContainerHeader>
 					<ContainerTagline>{t("tagline")}</ContainerTagline>
 					<ContainerTitle>{t("title")}</ContainerTitle>
@@ -42,17 +42,17 @@ export default async function ValueProposition() {
 					</div>
 				</div>
 			</ContainerContent>
-			<ContainerContent className="col-span-7 grid grid-cols-2 gap-5">
+			<ContainerContent className="lg:col-span-7 grid lg:grid-cols-2 gap-5">
 				<Image
 					src={"/images/office.jpg"}
 					alt={"office"}
 					height={800}
 					width={600}
-					className="object-cover h-full"
+					className="object-cover h-full max-lg:hidden"
 					sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,(max-width: 1600px) 40vw,33vw"
 				/>
 
-				<div className="grid grid-rows-2 gap-5">
+				<div className="grid lg:grid-rows-2 gap-5">
 					<Card className="flex justify-center size-full bg-primary text-primary-foreground">
 						<CardHeader className="space-y-5">
 							<Earth className="text-secondary size-10" />

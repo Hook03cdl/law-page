@@ -38,11 +38,11 @@ export default function Header() {
 	];
 	return (
 		<header className="sticky inset-0 bg-background border-b border-border z-40">
-			<nav className="h-20 flex items-center justify-between px-10 container mx-auto font-heading">
+			<nav className="h-20 flex items-center justify-between px-3 md:px-10 container mx-auto font-heading">
 				<Link href={"/"}>
 					<Logo />
 				</Link>
-				<ul className="flex gap-3">
+				<ul className="hidden md:flex gap-3">
 					{links.map(({ href, label }) => (
 						<li key={href}>
 							<Link

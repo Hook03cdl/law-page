@@ -14,11 +14,9 @@ export default async function ConsultationBanner() {
 	return (
 		<ContainerItem className="bg-primary">
 			<ContainerHeader>
-				<ContainerTitle className="text-center text-primary-foreground font-semibold text-4xl">
-					{t("title")}
-				</ContainerTitle>
+				<ContainerTitle className="text-center text-primary-foreground font-semibold">{t("title")}</ContainerTitle>
 				<div className="flex justify-center">
-					<ContainerDescription className="text-center text-base text-primary-foreground/60 max-w-3/7">
+					<ContainerDescription className="text-center text-base text-primary-foreground/60 md:max-w-4/7">
 						{t("description")}
 					</ContainerDescription>
 				</div>
