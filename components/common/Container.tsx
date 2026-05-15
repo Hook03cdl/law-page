@@ -23,7 +23,7 @@ export function ContainerItem({ className, ...props }: ContainerItemProps) {
 	return (
 		<section
 			data-slot="container-item"
-			className={cn("space-y-10 md:space-y-15 px-3 md:px-10 py-20 md:py-30", className)}
+			className={cn("first:pt-5 md:first:pt-10 space-y-10 md:space-y-15 px-3 md:px-10 py-20 md:py-30", className)}
 			{...props}
 		/>
 	);
@@ -63,10 +63,10 @@ export function ContainerTitle({ children, className, size = "default", ...props
 			data-size={size}
 			className={cn(
 				"font-heading text-primary font-bold",
-				"data-[size=default]:text-2xl md:data-[size=default]:text-4xl",
-				"data-[size=sm]:text-lg md:data-[size=sm]:text-2xl",
-				"data-[size=lg]:text-2xl md:data-[size=lg]:text-5xl",
-				"data-[size=xl]:text-3xl md:data-[size=xl]:text-6xl",
+				"data-[size=default]:text-2xl lg:data-[size=default]:text-4xl",
+				"data-[size=sm]:text-lg lg:data-[size=sm]:text-2xl",
+				"data-[size=lg]:text-2xl lg:data-[size=lg]:text-5xl",
+				"data-[size=xl]:text-3xl lg:data-[size=xl]:text-6xl",
 				className
 			)}
 			{...props}
@@ -79,10 +79,10 @@ export function ContainerTitle({ children, className, size = "default", ...props
 			data-size={size}
 			className={cn(
 				"font-heading text-primary font-bold",
-				"data-[size=default]:text-xl md:data-[size=default]:text-4xl",
-				"data-[size=sm]:text-base md:data-[size=sm]:text-2xl",
-				"data-[size=lg]:text-2xl md:data-[size=lg]:text-5xl",
-				"data-[size=xl]:text-3xl md:data-[size=xl]:text-6xl",
+				"data-[size=default]:text-xl lg:data-[size=default]:text-4xl",
+				"data-[size=sm]:text-base lg:data-[size=sm]:text-2xl",
+				"data-[size=lg]:text-2xl lg:data-[size=lg]:text-5xl",
+				"data-[size=xl]:text-3xl lg:data-[size=xl]:text-6xl",
 				className
 			)}
 			{...props}

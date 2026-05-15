@@ -15,14 +15,14 @@ import { getTranslations } from "next-intl/server";
 export default async function Hero() {
 	const t = await getTranslations("HomePage.hero");
 	return (
-		<ContainerItem className="md:grid md:grid-cols-12 pt-5! max-2xl:min-h-[calc(100svh-80px)]">
-			<ContainerContent className="md:col-span-7 flex flex-col justify-center">
+		<ContainerItem className="lg:grid lg:grid-cols-12 pt-5! max-2xl:min-h-[calc(100svh-80px)]">
+			<ContainerContent className="lg:col-span-7 flex flex-col justify-center">
 				<ContainerHeader>
 					<ContainerTagline>{t("tagLine")}</ContainerTagline>
 					<ContainerTitle size="xl">{t("title")}</ContainerTitle>
 					<ContainerDescription className="max-w-xl">{t("description")}</ContainerDescription>
 				</ContainerHeader>
-				<div className="grid md:flex gap-5 pt-10">
+				<div className="grid md:flex *:max-lg:flex-1 gap-5 pt-10">
 					<Button size={"lg"} asChild>
 						<Link href={"/specialties"}>{t("btnPrimary")}</Link>
 					</Button>
@@ -32,17 +32,17 @@ export default async function Hero() {
 				</div>
 			</ContainerContent>
 
-			<ContainerContent className="md:col-span-5 md:flex md:justify-end md:items-center">
-				<div className="md:relative">
+			<ContainerContent className="lg:col-span-5 lg:flex lg:justify-end lg:items-center">
+				<div className="lg:relative">
 					<Image
 						src={"/images/law.jpg"}
 						alt={"law"}
 						width={480}
 						loading="eager"
 						height={600}
-						className="object-contain max-md:hidden"
+						className="object-contain max-lg:hidden"
 					/>
-					<div className="md:absolute md:-bottom-7 md:-left-7 w-full md:w-52 h-32 grid place-items-center bg-accent">
+					<div className="lg:absolute lg:-bottom-7 lg:-left-7 w-full lg:w-52 h-32 grid place-items-center bg-accent">
 						<div>
 							<div className="flex items-center text-primary-foreground">
 								<p className="text-5xl font-semibold font-heading">10</p>
