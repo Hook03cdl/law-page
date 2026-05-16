@@ -42,23 +42,23 @@ export default function Header() {
 	];
 	return (
 		<header className={"sticky inset-0 bg-background border-b border-border z-40"}>
-			<HeaderMobile links={links} locales={params.locales} pathname={pathname} />
-			<HeaderDesktop links={links} locales={params.locales} pathname={pathname} />
+			<HeaderMobile links={links} locale={params.locales} pathname={pathname} />
+			<HeaderDesktop links={links} locale={params.locales} pathname={pathname} />
 		</header>
 	);
 }
 
 interface HeaderProps {
 	links: LinkProps[];
-	locales: "es" | "en";
+	locale: "es" | "en";
 	pathname: string;
 }
 
-function HeaderMobile({ links, locales, pathname }: HeaderProps) {
+function HeaderMobile({ links, locale, pathname }: HeaderProps) {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div className={"h-15 md:hidden flex items-center justify-between px-3 md:px-10 container mx-auto font-heading"}>
-			<Link href={"/"}>
+			<Link href={`/${locale}`}>
 				<Logo />
 			</Link>
 			<Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -75,7 +75,7 @@ function HeaderMobile({ links, locales, pathname }: HeaderProps) {
 								{links.map(({ href, label }) => (
 									<li key={href}>
 										<Link
-											href={href}
+											href={`/${locale}${href}`}
 											onClick={() => setIsOpen(false)}
 											className={cn(
 												"relative font-bold text-xl",
@@ -92,9 +92,9 @@ function HeaderMobile({ links, locales, pathname }: HeaderProps) {
 						</nav>
 					</div>
 					<SheetFooter>
-						<Link href={switchLocalePath(locales === "en" ? "es" : "en", pathname)} className="text-lg">
-							<span className={locales === "en" ? "font-bold" : ""}>En </span>/
-							<span className={locales === "es" ? "font-bold" : ""}>Es </span>
+						<Link href={switchLocalePath(locale === "en" ? "es" : "en", pathname)} className="text-lg">
+							<span className={locale === "en" ? "font-bold" : ""}>En </span>/
+							<span className={locale === "es" ? "font-bold" : ""}>Es </span>
 						</Link>
 					</SheetFooter>
 				</SheetContent>
@@ -102,10 +102,10 @@ function HeaderMobile({ links, locales, pathname }: HeaderProps) {
 		</div>
 	);
 }
-function HeaderDesktop({ links, pathname, locales }: HeaderProps) {
+function HeaderDesktop({ links, pathname, locale }: HeaderProps) {
 	return (
 		<div className="h-20 hidden md:flex items-center justify-between px-3 md:px-10 container mx-auto font-heading">
-			<Link href={"/"}>
+			<Link href={`/${locale}`}>
 				<Logo />
 			</Link>
 			<nav className="flex items-center">
@@ -113,7 +113,7 @@ function HeaderDesktop({ links, pathname, locales }: HeaderProps) {
 					{links.map(({ href, label }) => (
 						<li key={href}>
 							<Link
-								href={href}
+								href={`/${locale}${href}`}
 								className={
 									pathname.includes(href)
 										? "font-bold underline underline-offset-8 decoration-2 decoration-secondary"
@@ -128,9 +128,9 @@ function HeaderDesktop({ links, pathname, locales }: HeaderProps) {
 			</nav>
 			<ul className="flex items-center gap-5">
 				<li>
-					<Link href={switchLocalePath(locales === "en" ? "es" : "en", pathname)}>
-						<span className={locales === "en" ? "font-bold" : ""}>EN </span>/
-						<span className={locales === "es" ? "font-bold" : ""}>ES </span>
+					<Link href={switchLocalePath(locale === "en" ? "es" : "en", pathname)}>
+						<span className={locale === "en" ? "font-bold" : ""}>EN </span>/
+						<span className={locale === "es" ? "font-bold" : ""}>ES </span>
 					</Link>
 				</li>
 				{/* <li>
