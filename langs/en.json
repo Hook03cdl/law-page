@@ -119,7 +119,7 @@
     "description": "Our legal team is ready to assist you with your most complex international needs. Contact our offices in Mexico directly.",
     "us": "United Stated",
     "email": "Email",
-    "btnMap": "Open maps",
+    "btnMap": "Open map",
     "form": {
       "title": "Initial Inquiry",
       "btnSubmit": "SUBMIT INQUIRY",
@@ -146,6 +146,10 @@
           "error": "Enter your menssage"
         }
       }
+    },
+    "dialog": {
+      "title": "Location our office",
+      "schedules": "Mon - Sat"
     }
   },
   "Footer": {

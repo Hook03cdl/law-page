@@ -30,7 +30,7 @@ export default function FormContact() {
 			<CardContent>
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<div className="space-y-5">
-						<fieldset className="flex gap-5 *:flex-1">
+						<fieldset className="flex max-lg:flex-col gap-5 *:flex-1">
 							<Controller
 								rules={{ required: t("input.name.error") }}
 								name="fullname"

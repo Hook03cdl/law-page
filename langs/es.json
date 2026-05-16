@@ -119,7 +119,7 @@
     "description": "Nuestro equipo legal está listo para ayudarlo con sus necesidades internacionales más complejas. \nContacta directamente con nuestras oficinas en México.",
     "us": "Estados Unidos",
     "email": "Correo electrónico",
-    "btnMap": "Abrir mapas",
+    "btnMap": "Abrir mapa",
     "form": {
       "title": "Consulta inicial",
       "btnSubmit": "ENVIAR CONSULTA",
@@ -146,13 +146,17 @@
           "placeholder": "Proporcione una breve descripción de su caso..."
         }
       }
+    },
+    "dialog": {
+      "schedules": "Lun - Sáb",
+      "title": "Ubicación nuestra oficina"
     }
   },
   "Footer": {
     "description": "La moderación arquitectónica en el derecho. \nProporcionar representación de alto riesgo con meticulosa atención al detalle.",
     "contact": "Contacto",
     "location": "Ubicación",
-    "all-rights": "RESERVADOS TODOS LOS DERECHOS."
+    "all-rights": "TODOS LOS DERECHOS RESERVADOS ."
   },
   "NotFoundPage": {
     "label": "Rutas no encontradas",

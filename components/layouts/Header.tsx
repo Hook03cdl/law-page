@@ -6,6 +6,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
 import { Menu } from "lucide-react";
+import { useState } from "react";
 
 interface LinkProps {
 	label: string;
@@ -54,12 +55,13 @@ interface HeaderProps {
 }
 
 function HeaderMobile({ links, locales, pathname }: HeaderProps) {
+	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div className={"h-15 md:hidden flex items-center justify-between px-3 md:px-10 container mx-auto font-heading"}>
 			<Link href={"/"}>
 				<Logo />
 			</Link>
-			<Sheet>
+			<Sheet open={isOpen} onOpenChange={setIsOpen}>
 				<SheetTrigger>
 					<Menu />
 				</SheetTrigger>
@@ -74,6 +76,7 @@ function HeaderMobile({ links, locales, pathname }: HeaderProps) {
 									<li key={href}>
 										<Link
 											href={href}
+											onClick={() => setIsOpen(false)}
 											className={cn(
 												"relative font-bold text-xl",
 												pathname.includes(href)
