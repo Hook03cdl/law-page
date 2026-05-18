@@ -24,11 +24,11 @@ export default async function SpecialtiesPage() {
 			<ContainerItem>
 				<ContainerHeader className="max-w-3xl">
 					<ContainerTagline>{t("tagLine")}</ContainerTagline>
-					<ContainerTitle size="xl">{t('title')}</ContainerTitle>
+					<ContainerTitle size="xl">{t("title")}</ContainerTitle>
 					<ContainerDescription>{t("description")}</ContainerDescription>
 				</ContainerHeader>
-				<ContainerContent className="grid grid-cols-3 gap-5">
-					<ListSpecialities className="first:col-span-2 h-[40svh]" iconDecorator />
+				<ContainerContent className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
+					<ListSpecialities className="md:first:col-span-2 h-[40svh]" iconDecorator />
 				</ContainerContent>
 			</ContainerItem>
 			<ContainerItem className="relative min-h-128 bg-accent z-10">

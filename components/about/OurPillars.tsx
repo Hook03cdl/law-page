@@ -18,7 +18,7 @@ export default async function OurPillars() {
 				<ContainerTitle className="text-primary-foreground">{t("title")}</ContainerTitle>
 			</ContainerHeader>
 			<ContainerContent>
-				<div className="grid grid-cols-3 gap-2 bg-accent/20 p-3">
+				<div className="grid lg:grid-cols-3 gap-2 bg-accent/20 p-3">
 					<Card className="bg-primary text-accent-foreground">
 						<CardHeader>
 							<CardIcon>

@@ -21,13 +21,13 @@ export default async function AboutPage() {
 	return (
 		<Container>
 			<ContainerItem>
-				<ContainerHeader className="grid grid-cols-2 gap-10">
+				<ContainerHeader className="lg:grid lg:grid-cols-2 lg:gap-10">
 					<div className="space-y-10">
 						<ContainerTitle size="xl">{t("title")}</ContainerTitle>
 						<ContainerDescription className="max-w-xl">{t("description")}</ContainerDescription>
 					</div>
 					<div>
-						<div className="border border-border bg-surface p-10 mt-10 space-y-3">
+						<div className="border border-border bg-surface p-5 md:p-10 mt-10 space-y-3">
 							<p className="text-secondary">{t("established")}</p>
 							<p className={`italic text-primary/80 before:content-['"'] after:content-['"']`}>{t("landscape")}</p>
 						</div>

@@ -20,7 +20,13 @@ export function Container({ className, ...props }: ContainerProps) {
 	);
 }
 export function ContainerItem({ className, ...props }: ContainerItemProps) {
-	return <section data-slot="container-item" className={cn("space-y-15 px-10 py-30", className)} {...props} />;
+	return (
+		<section
+			data-slot="container-item"
+			className={cn("first:pt-5 md:first:pt-10 space-y-10 md:space-y-15 px-3 md:px-10 py-15 md:py-30", className)}
+			{...props}
+		/>
+	);
 }
 
 export function ContainerHeader({ className, ...props }: ContainerHeaderProps) {
@@ -39,9 +45,13 @@ export function ContainerHeader({ className, ...props }: ContainerHeaderProps) {
 
 export function ContainerTagline({ children, className, ...props }: ContainerTitleProps) {
 	return typeof children === "string" ? (
-		<p className="text-secondary font-bold text-sm">{children}</p>
+		<p className="text-secondary font-bold text-xs md:text-sm">{children}</p>
 	) : (
-		<div data-slot="container-title" className={cn("text-secondary font-bold text-sm", className)} {...props}>
+		<div
+			data-slot="container-title"
+			className={cn("text-secondary font-bold text-xs md:text-sm", className)}
+			{...props}
+		>
 			{children}
 		</div>
 	);
@@ -53,7 +63,10 @@ export function ContainerTitle({ children, className, size = "default", ...props
 			data-size={size}
 			className={cn(
 				"font-heading text-primary font-bold",
-				"data-[size=default]:text-4xl data-[size=sm]:text-2xl data-[size=lg]:text-5xl data-[size=xl]:text-6xl",
+				"data-[size=default]:text-2xl lg:data-[size=default]:text-4xl",
+				"data-[size=sm]:text-lg lg:data-[size=sm]:text-2xl",
+				"data-[size=lg]:text-2xl lg:data-[size=lg]:text-5xl",
+				"data-[size=xl]:text-3xl lg:data-[size=xl]:text-6xl",
 				className
 			)}
 			{...props}
@@ -66,7 +79,10 @@ export function ContainerTitle({ children, className, size = "default", ...props
 			data-size={size}
 			className={cn(
 				"font-heading text-primary font-bold",
-				"data-[size=default]:text-4xl data-[size=sm]:text-2xl data-[size=lg]:text-5xl data-[size=xl]:text-6xl",
+				"data-[size=default]:text-xl lg:data-[size=default]:text-4xl",
+				"data-[size=sm]:text-base lg:data-[size=sm]:text-2xl",
+				"data-[size=lg]:text-2xl lg:data-[size=lg]:text-5xl",
+				"data-[size=xl]:text-3xl lg:data-[size=xl]:text-6xl",
 				className
 			)}
 			{...props}
@@ -87,7 +103,9 @@ export function ContainerAction({ className, ...props }: ContainerActionProps) {
 }
 
 export function ContainerDescription({ className, ...props }: ContainerDescriptionProps) {
-	return <div data-slot="container-description" className={cn("text-lg text-foreground", className)} {...props}></div>;
+	return (
+		<div data-slot="container-description" className={cn("md:text-lg text-foreground", className)} {...props}></div>
+	);
 }
 
 export function ContainerContent({ ...props }: ContainerContentProps) {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Public_Sans, Noto_Serif } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { getLocale } from "next-intl/server";
 
 const heading = Noto_Serif({
 	variable: "--font-heading",
@@ -16,12 +17,10 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
 	children,
-	params,
 }: Readonly<{
 	children: React.ReactNode;
-	params: Promise<{ locales: "es" | "en" }>;
 }>) {
-	const { locales } = await params;
+	const locales = await getLocale();
 	return (
 		<html lang={locales} className={cn("h-full antialiased font-mono", heading.variable, body.variable)}>
 			<body className="min-h-full flex flex-col">{children}</body>

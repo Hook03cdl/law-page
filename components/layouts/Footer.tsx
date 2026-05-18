@@ -9,7 +9,7 @@ export default async function Footer() {
 	const year = new Date().getFullYear();
 	return (
 		<footer className="container mx-auto">
-			<div className="grid grid-cols-3 gap-20 py-20 px-10">
+			<div className="grid md:grid-cols-3 gap-20 py-10 md:py-20 px-3 md:px-10">
 				<div className="grid gap-5">
 					<Logo />
 					<p className="text-sm text-accent/70">{t("description")}</p>
@@ -31,11 +31,11 @@ export default async function Footer() {
 					</Link>
 				</address>
 				<address className="flex flex-col gap-5">
-					<p className="text-sm font-bold text-accent">{t('location')}</p>
+					<p className="text-sm font-bold text-accent">{t("location")}</p>
 					<p className="text-accent/70">Gral Manuel Márquez de León 2340, Zona Central, 23000 La Paz, B.C.S.</p>
 				</address>
 			</div>
-			<div className="p-10">
+			<div className="px-3 md:px-10 py-10">
 				<p className="text-accent/70 text-sm font-heading">
 					© {year} ARCHITECTURAL RESTRAINT LAW. {t("all-rights")}
 				</p>

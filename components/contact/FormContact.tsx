@@ -10,6 +10,7 @@ import { Button } from "../ui/button";
 import { ContactProps } from "@/types/contact";
 import useListSpecialties from "@/hooks/useListSpecialties";
 import { useTranslations } from "next-intl";
+import { ListPlus } from "lucide-react";
 
 export default function FormContact() {
 	const t = useTranslations("ContactPage.form");
@@ -30,7 +31,7 @@ export default function FormContact() {
 			<CardContent>
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<div className="space-y-5">
-						<fieldset className="flex gap-5 *:flex-1">
+						<fieldset className="flex max-lg:flex-col gap-5 *:flex-1">
 							<Controller
 								rules={{ required: t("input.name.error") }}
 								name="fullname"
@@ -53,7 +54,7 @@ export default function FormContact() {
 										type="email"
 										{...field}
 										label={t("input.email.label")}
-										placeholder="john.doe@example.com"
+										placeholder={t("input.email.placeholder")}
 										errorMsg={error?.message}
 									/>
 								)}
@@ -84,6 +85,10 @@ export default function FormContact() {
 													<span>{name}</span>
 												</SelectItem>
 											))}
+											<SelectItem value="other">
+												<ListPlus />
+												<span>{t("other-item")}</span>
+											</SelectItem>
 										</SelectGroup>
 									</SelectContent>
 								</Select>

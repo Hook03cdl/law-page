@@ -1,123 +1,171 @@
 {
-  "HomePage": {
-    "hero": {
-      "tagLine": "UNRIVALED LEGAL REPRESENTATION",
-      "title": "Authority Built on Decades of Trust.",
-      "description": "Navigating high-stakes cross-border legalities with surgical precision. We provide architectural restraint to your legal challenges, ensuring stability in Mexico and the United States.",
-      "btnPrimary": "OUR SPECIALTIES",
-      "btnSecondary": "SCHEDULE CONSULTATION"
-    }
-  },
-  "Header": {
-    "specialties": "Specialties",
-    "about": "About Us",
-    "contact": "Contact"
-  },
-  "SpecialtiesPage": {
-    "tagLine": "LEGAL EXPERTISE",
-    "description": "Navigating the complexities of cross-border law requires more than just legal knowledge; it demands architectural precision and a global perspective. We provide high-tier representation in the following practice areas.",
-    "subtitle": "Discuss Your Case",
-    "subdescription": "Professional consultation is the first step toward architectural legal stability. Connect with our experts today.",
-    "btn": "SCHEDULE CONSULTATION",
-    "title": "Our Specialties"
-  },
-  "specialties": {
-    "0": {
-      "title": "Family law",
-      "description": "Strategic guidance for complex mergers, acquisitions, and cross-border structuring."
-    },
-    "1": {
-      "title": "Litigation",
-      "description": "Securing high-value assets and navigating international property regulations."
-    },
-    "2": {
-      "title": "Commercial law",
-      "description": "Strategic guidance for high-value residential and commercial property acquisitions and development."
-    },
-    "3": {
-      "title": "Wills and intestacy",
-      "description": "High-stakes advocacy with a focus on arbitration and resolution excellence."
-    },
-    "4": {
-      "title": "Migratory",
-      "description": "Optimizing fiscal efficiency for multinational entities and high-net-worth individuals."
-    }
-  },
-  "AboutPage": {
-    "title": "Architecture of Justice. Restraint in Practice.",
-    "description": "Founded on the principles of stability and meticulous cross-border intelligence, Legal Authority operates at the intersection of high- stakes corporate law and architectural precision. We do not merely represent; we construct frameworks for long-term legal security.",
-    "established": "ESTABLISHED 1994",
-    "landscape": "In the complex landscape of MX/US relations, silence is often the most powerful strategy, and precision\tthe only acceptable outcome.",
-    "legacy": {
-      "title": "Our Legacy",
-      "subtitle": "Three Decades of Sovereignty",
-      "description": "What began as a boutique advisory for cross- border architectural ventures in La Paz has evolved into a comprehensive legal authority. We bridged the gap between jurisdictions, ensuring that corporate assets remained protected under the strictest interpretations of international law.",
-      "subdescription": "Our history is defined by the cases we didn't have to litigate—agreements so airtight they precluded the possibility of dispute."
-    },
-    "pillars": {
-      "0": {
-        "title": "Absolute Restraint",
-        "description": "We operate with quiet efficiency. No unnecessary noise, no performative litigation. Only strategic movements that yield definitive results."
-      },
-      "1": {
-        "title": "Structural Integrity",
-        "description": "Every contract we draft is an architectural feat. We build legal structures designed to withstand the pressures of fluctuating markets and changing political climates."
-      },
-      "2": {
-        "title": "Cross-Border Fluency",
-        "description": "We translate complex legal frameworks between Mexico and the United States, providing a seamless bridge for multi-national corporate interests."
-      },
-      "tagLine": "MISSION & CORE VALUES",
-      "title": "The Pillars of Name"
-    },
-    "leadership": {
-      "tagline": "LEADERSHIP",
-      "title": "The Architects of the Firm",
-      "description": "Our partners bring an average of 25 years of experience in international arbitration and corporate governance."
-    },
-    "information": {
-      "title": "Global reach, local authority.",
-      "us": "United Stated"
-    }
-  },
-  "ContactPage": {
-    "title": "Establish Contact.",
-    "description": "Our legal team is ready to assist you with your most complex international needs. Contact our offices in Mexico directly.",
-    "us": "United Stated",
-    "email": "Email",
-    "btnMap": "Open maps",
-    "form": {
-      "title": "Initial Inquiry",
-      "btnSubmit": "SUBMIT INQUIRY",
-      "input": {
-        "name": {
-          "label": "Full name",
-          "placeholder": "John Doe",
-          "error": "Enter your full name"
-        },
-        "email": {
-          "label": "Email address",
-          "error": "Enter your email"
-        },
-        "phone": {
-          "label": "Phone number",
-          "error": "Enter your phone number"
-        },
-        "subject": {
-          "label": "Subject"
-        },
-        "message": {
-          "label": "Message",
-          "placeholder": "Provide a brief overview of your case...",
-          "error": "Enter your menssage"
-        }
-      }
-    }
-  },
-  "Footer": {
-    "description": "Architectural restraint in law. Providing high-stakes representation with meticulous attention to detail.",
-    "contact": "Contact",
-    "all-rights": "ALL RIGHTS RESERVED.",
-    "location": "Location"
-  }
+	"HomePage": {
+		"hero": {
+			"tagLine": "UNRIVALED LEGAL REPRESENTATION",
+			"title": "Authority Built on Decades of Trust.",
+			"description": "Navigating high-stakes legalities with surgical precision. We provide architectural restraint to your legal challenges, ensuring stability in Mexico.",
+			"btnPrimary": "OUR SPECIALTIES",
+			"btnSecondary": "SCHEDULE CONSULTATION",
+			"excelence": "YEARS OF EXCELLENCE"
+		},
+		"proposition": {
+			"0": {
+				"title": "Bilingual Proficiency",
+				"description": "Native fluency in both legal systems and languages ensures nothing is lost in translation."
+			},
+			"1": {
+				"title": "Maximum Confidentiality",
+				"description": "We prioritize the absolute privacy and security of our high- tier corporate clients."
+			},
+			"tagline": "DISTINCTIVE EXCELLENCE",
+			"title": "Architectural Restraint in Legal Strategy.",
+			"description": "We believe that the most effective legal solutions are built with meticulous care and structural integrity. Our firm operates at the intersection of Mexican and U.S. law, providing a seamless bridge for global interests.",
+			"card": {
+				"0": {
+					"title": "Global Reach",
+					"description": "Connecting the financial hubs of Mexico and United Stated."
+				},
+				"1": {
+					"title": "Document Integrity",
+					"description": "Rigid alignment and attention to detail in every contract."
+				}
+			}
+		},
+		"core": {
+			"tagline": "PRECISION JURISPRUDENCE",
+			"title": "Core Specialties",
+			"link": "VIEW ALL AREAS"
+		},
+		"banner": {
+			"title": "Ready to Secure Your Legal Authority?",
+			"description": "Consult with our senior partners today to discuss your cross-border strategy and secure your interests with world-class representation.",
+			"button": "SCHEDULE YOUR CONSULTATION"
+		}
+	},
+	"Header": {
+		"specialties": "Specialties",
+		"about": "About Us",
+		"contact": "Contact"
+	},
+	"SpecialtiesPage": {
+		"tagLine": "LEGAL EXPERTISE",
+		"description": "At our firm, we understand that every legal situation requires unique attention. That's why we offer clear and strategic support in various areas of law, always with the confidence and reliability that set us apart.",
+		"subtitle": "Discuss Your Case",
+		"subdescription": "Professional consultation is the first step toward architectural legal stability. Connect with our experts today.",
+		"btn": "SCHEDULE CONSULTATION",
+		"title": "Our Specialties"
+	},
+	"specialties": {
+		"0": {
+			"title": "Family law",
+			"description": "We protect your family ties with solid, humane and strategic legal solutions."
+		},
+		"1": {
+			"title": "Litigation",
+			"description": "We defend your interests firmly and strategically, guaranteeing fairness and strength in the courts."
+		},
+		"2": {
+			"title": "Commercial law",
+			"description": "We boost the strength of your business with reliable legal strategies in the Mexican commercial field."
+		},
+		"3": {
+			"title": "Wills and intestacy",
+			"description": "We guarantee legal certainty in the distribution of assets, protecting your inheritance rights in Mexico."
+		},
+		"4": {
+			"title": "Migratory",
+			"description": "We advise on immigration procedures in Mexico with legal precision, guaranteeing certainty and confidence in each process."
+		}
+	},
+	"AboutPage": {
+		"title": "Architecture of Justice. Restraint in Practice.",
+		"description": "Our law firm is distinguished by the seriousness, rigor and precision with which we approach each matter, offering strategic solutions in various branches of law that guarantee certainty and stability to our clients.",
+		"established": "ESTABLISHED 1994",
+		"landscape": "In the complex landscape of MX/US relations, silence is often the most powerful strategy, and precision\tthe only acceptable outcome.",
+		"legacy": {
+			"title": "Our Legacy",
+			"subtitle": "Three Decades of Sovereignty",
+			"description": "Our legacy is reflected in the tangible results we have achieved throughout our history. Each successfully resolved case represents not only the rigorous application of the law, but also our team's unwavering commitment to legal excellence. We have built a practice that prioritizes professional responsibility and the pursuit of effective solutions, fostering trust and stability for those who have entrusted us with their legal matters.",
+			"subdescription": "The results we achieve are the foundation of our reputation and the driving force behind our growth. Beyond victories in court, our legacy is built on the peace of mind we provide our clients and the legal certainty we ensure in every case."
+		},
+		"pillars": {
+			"0": {
+				"title": "Absolute Restraint",
+				"description": "We operate with quiet efficiency. No unnecessary noise, no performative litigation. Only strategic movements that yield definitive results."
+			},
+			"1": {
+				"title": "Structural Integrity",
+				"description": "Every contract we draft is an architectural feat. We build legal structures designed to withstand the pressures of fluctuating markets and changing political climates."
+			},
+			"2": {
+				"title": "Cross-Border Fluency",
+				"description": "We translate complex legal frameworks between Mexico and the United States, providing a seamless bridge for multi-national corporate interests."
+			},
+			"tagLine": "MISSION & CORE VALUES",
+			"title": "The Pillars of Name"
+		},
+		"leadership": {
+			"tagline": "LEADERSHIP",
+			"title": "The Architects of the Firm",
+			"description": "Our partners bring an average of 25 years of experience in international arbitration and corporate governance."
+		},
+		"information": {
+			"title": "Global reach, local authority.",
+			"us": "United Stated"
+		}
+	},
+	"ContactPage": {
+		"title": "Establish Contact.",
+		"description": "Our legal team is ready to assist you with your most complex. Contact us directly using our numbers.",
+		"us": "United Stated",
+		"email": "Email",
+		"btnMap": "Open map",
+		"form": {
+			"title": "Initial Inquiry",
+			"btnSubmit": "SUBMIT INQUIRY",
+			"input": {
+				"name": {
+					"label": "Full name",
+					"placeholder": "John Doe",
+					"error": "Enter your full name"
+				},
+				"email": {
+					"label": "Email address",
+					"error": "Enter your email",
+					"placeholder": "john.doe@example.com"
+				},
+				"phone": {
+					"label": "Phone number",
+					"error": "Enter your phone number"
+				},
+				"subject": {
+					"label": "Subject"
+				},
+				"message": {
+					"label": "Message",
+					"placeholder": "Provide a brief overview of your case...",
+					"error": "Enter your menssage"
+				}
+			},
+			"other-item": "Other"
+		},
+		"dialog": {
+			"title": "Location our office",
+			"schedules": "Mon - Sat"
+		}
+	},
+	"Footer": {
+		"description": "Architectural restraint in law. Providing high-stakes representation with meticulous attention to detail.",
+		"contact": "Contact",
+		"all-rights": "ALL RIGHTS RESERVED.",
+		"location": "Location"
+	},
+	"NotFoundPage": {
+		"label": "Routes not found",
+		"title": "We couldn't find that page",
+		"description": "The page you're looking for may have been moved, renamed, or removed. Double-check the URL or head back to where you came from.",
+		"btnPrimary": "Go to Home",
+		"support": "Contact support",
+		"btnBack": "Back"
+	}
 }

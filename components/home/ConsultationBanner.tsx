@@ -7,24 +7,23 @@ import {
 	ContainerTitle,
 } from "../common/Container";
 import { Button } from "../ui/button";
+import { getTranslations } from "next-intl/server";
 
-export default function ConsultationBanner() {
+export default async function ConsultationBanner() {
+	const t = await getTranslations("HomePage.banner");
 	return (
 		<ContainerItem className="bg-primary">
 			<ContainerHeader>
-				<ContainerTitle className="text-center text-primary-foreground font-semibold text-4xl">
-					Ready to Secure Your Legal Authority?
-				</ContainerTitle>
+				<ContainerTitle className="text-center text-primary-foreground font-semibold">{t("title")}</ContainerTitle>
 				<div className="flex justify-center">
-					<ContainerDescription className="text-center text-base text-primary-foreground/60 max-w-3/7">
-						Consult with our senior partners today to discuss your cross-border strategy and secure your interests with
-						world-class representation.
+					<ContainerDescription className="text-center text-base text-primary-foreground/60 md:max-w-4/7">
+						{t("description")}
 					</ContainerDescription>
 				</div>
 			</ContainerHeader>
 			<ContainerContent className="flex justify-center">
 				<Button variant={"inverted"} size={"xl"} asChild>
-					<Link href={"/contact"}>SCHEDULE YOUR CONSULTATION</Link>
+					<Link href={"/contact"}>{t("button")}</Link>
 				</Button>
 			</ContainerContent>
 		</ContainerItem>
