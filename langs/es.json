@@ -3,7 +3,7 @@
     "hero": {
       "tagLine": "REPRESENTACIÓN JURÍDICA INIGUALABLE",
       "title": "Autoridad construida sobre décadas de confianza.",
-      "description": "Navegando legalidades transfronterizas de alto riesgo con precisión quirúrgica. \nBrindamos contención arquitectónica a sus desafíos legales, asegurando estabilidad en México y Estados Unidos.",
+      "description": "Navegando por legalidades de alto riesgo con precisión quirúrgica. \nBrindamos contención arquitectónica a sus desafíos legales, asegurando la estabilidad en México.",
       "btnPrimary": "NUESTRAS ESPECIALIDADES",
       "btnSecondary": "PROGRAMAR CONSULTA",
       "excelence": "AÑOS DE EXCELENCIA"
@@ -49,7 +49,7 @@
   },
   "SpecialtiesPage": {
     "tagLine": "EXPERIENCIA JURÍDICA",
-    "description": "Navegar por las complejidades del derecho transfronterizo requiere algo más que conocimientos jurídicos; \nExige precisión arquitectónica y una perspectiva global. \nOfrecemos representación de alto nivel en las siguientes áreas de práctica.",
+    "description": "En nuestra firma entendemos que cada situación legal requiere una atención única. \nEs por eso que ofrecemos un apoyo claro y estratégico en diversas áreas del derecho, siempre con la confianza y confiabilidad que nos diferencia.",
     "title": "Nuestras Especialidades",
     "subtitle": "Discuta su caso",
     "subdescription": "La consulta profesional es el primer paso hacia la estabilidad jurídica arquitectónica. \nConéctese con nuestros expertos hoy.",
@@ -58,35 +58,35 @@
   "specialties": {
     "0": {
       "title": "Derecho familiar",
-      "description": "Orientación estratégica para fusiones, adquisiciones y estructuraciones transfronterizas complejas."
+      "description": "Protegemos sus vínculos familiares con soluciones jurídicas sólidas, humanas y estratégicas."
     },
     "1": {
       "title": "Litigio",
-      "description": "Asegurar activos de alto valor y navegar por las regulaciones inmobiliarias internacionales."
+      "description": "Defendemos sus intereses con firmeza y estrategia, garantizando equidad y solidez en los tribunales."
     },
     "2": {
       "title": "Derecho mercantil",
-      "description": "Orientación estratégica para adquisiciones y desarrollo de propiedades residenciales y comerciales de alto valor."
+      "description": "Impulsamos la solidez de su negocio con estrategias legales confiables en el ámbito comercial mexicano."
     },
     "3": {
       "title": "Testamentos e intestado",
-      "description": "Defensa de alto riesgo con enfoque en el arbitraje y la excelencia en la resolución."
+      "description": "Garantizamos seguridad jurídica en la distribución de bienes, protegiendo sus derechos sucesorios en México."
     },
     "4": {
       "title": "Migratorio",
-      "description": "Optimizar la eficiencia fiscal para entidades multinacionales y personas de alto patrimonio."
+      "description": "Asesoramos en trámites migratorios en México con precisión jurídica, garantizando certeza y confianza en cada proceso."
     }
   },
   "AboutPage": {
     "title": "Arquitectura de la Justicia. \nLa moderación en la práctica.",
-    "description": "Fundada sobre los principios de estabilidad y meticulosa inteligencia transfronteriza, Legal Authority opera en la intersección del derecho corporativo de alto riesgo y la precisión arquitectónica. \nNo nos limitamos a representar; \nconstruimos marcos para la seguridad jurídica a largo plazo.",
+    "description": "Nuestra firma de abogados se distingue por la seriedad, rigor y precisión con la que abordamos cada asunto, ofreciendo soluciones estratégicas en diversas ramas del derecho que garantizan certeza y estabilidad a nuestros clientes.",
     "established": "ESTABLECIDO 1994",
     "landscape": "En el complejo panorama de las relaciones entre México y Estados Unidos, el silencio es a menudo la estrategia más poderosa y la precisión el único resultado aceptable.",
     "legacy": {
       "title": "Nuestro legado",
       "subtitle": "Tres décadas de soberanía",
-      "description": "Lo que comenzó como una asesoría boutique para emprendimientos arquitectónicos transfronterizos en La Paz ha evolucionado hasta convertirse en una autoridad legal integral. \nCerramos la brecha entre jurisdicciones, asegurando que los activos corporativos permanecieran protegidos bajo las interpretaciones más estrictas del derecho internacional.",
-      "subdescription": "Nuestra historia está definida por los casos que no tuvimos que litigar: acuerdos tan herméticos que excluyeron la posibilidad de disputas."
+      "description": "Nuestro legado se refleja en los resultados tangibles que hemos logrado a lo largo de nuestra historia. \nCada caso resuelto con éxito representa no sólo la aplicación rigurosa de la ley, sino también el compromiso inquebrantable de nuestro equipo con la excelencia legal. \nHemos construido una práctica que prioriza la responsabilidad profesional y la búsqueda de soluciones efectivas, fomentando la confianza y estabilidad de quienes nos han confiado sus asuntos legales.",
+      "subdescription": "Los resultados que logramos son la base de nuestra reputación y la fuerza impulsora de nuestro crecimiento. \nMás allá de las victorias en los tribunales, nuestro legado se basa en la tranquilidad que brindamos a nuestros clientes y la seguridad jurídica que garantizamos en cada caso."
     },
     "pillars": {
       "0": {
@@ -116,7 +116,7 @@
   },
   "ContactPage": {
     "title": "Establecer contacto.",
-    "description": "Nuestro equipo legal está listo para ayudarlo con sus necesidades internacionales más complejas. \nContacta directamente con nuestras oficinas en México.",
+    "description": "Nuestro equipo legal está listo para ayudarle con sus casos más complejos. \nContáctanos directamente usando nuestros números.",
     "us": "Estados Unidos",
     "email": "Correo electrónico",
     "btnMap": "Abrir mapa",
@@ -131,7 +131,8 @@
         },
         "email": {
           "error": "Introduce tu correo electrónico",
-          "label": "Correo electrónico"
+          "label": "Correo electrónico",
+          "placeholder": "juan.perez@ejemplo.com"
         },
         "phone": {
           "error": "Introduce tu número de teléfono",
@@ -145,7 +146,8 @@
           "label": "Mensaje",
           "placeholder": "Proporcione una breve descripción de su caso..."
         }
-      }
+      },
+      "other-item": "Otro"
     },
     "dialog": {
       "schedules": "Lun - Sáb",

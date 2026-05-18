@@ -52,7 +52,7 @@ export default async function ContactPage() {
 				/>
 				<Card className="md:absolute md:top-1/2 md:left-1/2 md:-translate-1/2 md:max-w-md">
 					<CardHeader>
-						<CardTitle>Name</CardTitle>
+						<CardTitle>Marca</CardTitle>
 					</CardHeader>
 					<CardContent>
 						<p>Gral Manuel Márquez de León 2340, Zona Central, 23000 La Paz, B.C.S.</p>
